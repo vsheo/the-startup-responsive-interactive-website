@@ -1,0 +1,154 @@
+/* === RESET === */
+.reset {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+    list-style-type: none;
+    list-style: none;
+
+    object-fit: cover;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* === GLOBAL === */
+
+body {
+    /* kleuren */
+    --background-primary: #F0F0F0;
+    --background-secondary: #FFFFFF;
+
+    --highlight: #0275FF;
+
+    --filter-highlight: #CCE3FF;
+
+    --text-primary: #5D666A;
+    --text-white: #FFFFFF;
+    color: var(--text-primary);
+
+    --toegankelijk-primary: #00C858;
+    --toegankelijk-secondary: #BBFFD8;
+
+    --nfo-primary: #FF9800;
+    --nfo-secondary: #FFD08A;
+
+    --ontoegankelijk-primary: #FFDADA;
+    --ontoegankelijk-secondary: #B50000;
+
+    /* typografie */
+    --font-family-primary: 'Outfit', sans-serif;
+    --line-height-primary: 21.6px;
+    line-height: var(--line-height-primary);
+    font-family: var(--font-family-primary);
+
+    --font-size-primary: 16px;
+    --font-size-secondary: 14px;
+
+    --font-size-title-l: 48px;
+    --font-size-title-m: 32px;
+    --font-size-title-s: 26px;
+
+    --font-size-headings: 20px;
+
+    --font-weight-primary: 400;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+    font-weight: var(--font-weight-primary);
+
+    /* formulieren */
+    --icon-primary: #5D666A;
+}
+
+
+/* === TYPOGRAFIE === */
+/* normal */
+@font-face {
+    font-family: 'Outfit';
+    src: url('fonts/outfit-v11-latin-regular.woff2') format('woff2');
+    font-weight: var(--font-weight-primary);
+    font-style: normal;
+}
+
+/* semibold */
+@font-face {
+    font-family: 'Outfit';
+    src: url('fonts/outfit-v11-latin-regular.woff2') format('woff2');
+    font-weight: var(--font-weight-semibold);
+    font-style: normal;
+}
+
+/* bold */
+@font-face {
+    font-family: 'Outfit';
+    src: url('fonts/outfit-v11-latin-regular.woff2') format('woff2');
+    font-weight: var(--font-weight-bold);
+    font-style: normal;
+}
+
+.font-title {
+    font-size: var(--font-size-title-l);
+    font-weight: var(--font-weight-bold);
+}
+
+.font-details-title {
+    font-size: var(--font-size-title-m);
+    font-weight: var(--font-weight-bold);
+}
+
+.font-nav-links {
+    font-size: var(--font-size-headings);
+    font-weight: var(--font-weight-semibold);
+}
+
+.font-nav-headings {
+    color: var(--highlight);
+    font-size: var(--font-size-headings);
+    font-weight: var(--font-weight-semibold);
+}
+
+.font-overzicht-title {
+    font-size: var(--font-size-title-s);
+    font-weight: var(--font-weight-semibold);
+}
+
+a {
+    color: var(--text-primary);
+    font-size: var(--font-size-secondary);
+}
+
+
+/* === FORMULIEREN === */
+.icon-search {
+    color: var(--icon-primary);
+    height: 30px;
+    width: 24px;
+}
+
+.icon-drop-down {
+    color: var(--icon-primary);
+    height: 4px;
+    width: 8px;
+}
+
+.button-filter {
+    background-color: var(--highlight);
+    color: var(--text-white);
+}
+
+.button-filter:hover {
+    background-color: var(--filter-highlight);
+    color: var(--highlight);
+}
+
+.button-filter-active {
+    background-color: var(--filter-highlight);
+    color: var(--highlight);
+}
+
+.button-nieuwe-fouten {
+    background-color: var(--nfo-secondary);
+    border-color: var(--nfo-primary);
+}

@@ -11,7 +11,7 @@
     }
 }
 
-.main-content {
+.overzicht-main-content {
     p {
         margin-bottom: 0.2em;
     }
@@ -65,7 +65,7 @@
         button {
             grid-area: button;
 
-            border-radius: 235px;
+            border-radius: 59px;
 
             /* center svg en tekst */
             display: flex;
@@ -86,6 +86,141 @@
         }
     }
 }
+
+
+.details-main-content {
+    p {
+        margin-bottom: 0.2em;
+    }
+
+    h1 {
+        margin-top: 0;
+    }
+
+    .kaart-toegankelijkheid {
+        display: grid;
+        grid-template-columns: min-content 1fr;
+        grid-template-rows: min-content 1fr;
+        grid-template-areas:
+        "title title"
+        "progress niveau"
+        ;
+
+        background-color: var(--background-secondary);
+        height: 13.8em;
+        width: 17.8em;
+        border-radius: 15px;
+
+        h2 {
+            grid-area: title;
+
+            margin-left: 1.5em;
+        }
+
+        progress {
+            grid-area: progress;
+
+            margin-left: 1.5em;
+        }
+
+        p {
+            grid-area: niveau;
+
+            margin-left: 1em;
+
+            span {
+                display: flex;
+                white-space: nowrap;
+                margin-bottom: 0.4em;
+            }
+        }
+    }
+
+    .kaart-automatische-scan {
+        display: grid;
+        grid-template-columns: min-content 1fr 1fr;
+        grid-template-rows: min-content 1fr;
+        grid-template-areas:
+        "title title title"
+        "progress nfo aandacht"
+        ;
+
+        background-color: var(--background-secondary);
+        height: 13.8em;
+        width: 54.94em;
+        border-radius: 15px;
+
+        h2 {
+            grid-area: title;
+
+            white-space: nowrap;
+        }
+
+        .time-stamp {
+            grid-area: title;
+
+            justify-self: end;
+            text-align: end;
+        }
+
+        progress {
+            grid-area: progress;
+        }
+
+        p {
+            grid-area: nfo;
+
+            max-width: 18em;
+            button {
+                border-radius: 59px;
+
+                /* center svg en tekst */
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                svg {
+                    margin-right: 1em;
+                }
+            }
+        }
+
+        h3 {
+            grid-area: aandacht;
+
+            font-weight: var(--font-weight-bold);
+            white-space: nowrap;
+        }
+
+        ul {
+            grid-area: aandacht;
+
+            align-self: end;
+
+            /* split ul in 3 kolommen */
+            column-count: 3;
+
+            li {
+                white-space: nowrap;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* progress bar */
 /* https://css-tip.com/circular-progress/ */

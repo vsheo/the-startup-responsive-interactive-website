@@ -10,72 +10,92 @@
 <body>
     <main>
         <!-- menu -->
-        <section>
-            <h2>AccessDash</h2>
+        <section class="menu">
+            <h2 class="font-nav-headings">AccessDash</h2>
             <h3>
-                <button>Dashboard</button>
+                <button class="font-nav-headings">Dashboard</button>
             </h3>
             <ul>
-                <li>Dashboard</li>
-                <li>Info</li>
-                <li>Voortgang</li>
-                <li>Scan</li>
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="#">Info</a></li>
+                <li><a href="#">Voortgang</a></li>
+                <li><a href="#">Scan</a></li>
             </ul>
 
             <h3>
-                <button>Nieuwekijk</button>
+                <button class="font-nav-headings">Nieuwekijk</button>
             </h3>
             <ul>
-                <li>/home</li>
-                <li>/over-ons</li>
-                <li>/contact</li>
-                <li>/missie</li>
-                <li>/blog</li>
-                <li>/blog-detail</li>
+                <li><a href="#">/home</a></li>
+                <li><a href="#">/over-ons</a></li>
+                <li><a href="#">/contact</a></li>
+                <li><a href="#">/missie</a></li>
+                <li><a href="#">/blog</a></li>
+                <li><a href="#">/blog-detail</a></li>
             </ul>
-            <a href="#">instellingen</a>
-            <a href="#">account</a>
+            <a class="font-nav-links" href="#">instellingen</a>
+            <a class="font-nav-links" href="#">account</a>
         </section>
 
         <!-- main content -->
-        <section>
+        <section class="main-content">
             <p>Dashboard</p>
-            <h1>Nieuwekijk</h1>
+            <h1 class="font-title">Nieuwekijk</h1>
 
             <!-- website kaartjes -->
-             <!-- new future lab -->
+            <!-- new future lab -->
             <article>
                 <img src="./assets/images/new_future_lab_logo.png" alt="new future lab website logo">
-                <h2>new Future Lab</h2>
+                <h2 class="font-details-title">new Future Lab</h2>
                 <a href="#">newfuturelab.nl</a>
-                <button>ontoegankelijk</button>
+                <button class="button-ontoegankelijk">ontoegankelijk</button>
                 <progress value="57" max="100"></progress>
             </article>
 
             <!-- shot of culture -->
             <article>
                 <img src="./assets/images/shot_of_culture_logo.png" alt="shot of culture website logo">
-                <h2>Shot of Culture</h2>
+                <h2 class="font-details-title">Shot of Culture</h2>
                 <a href="#">shotofculture.nl</a>
-                <button>nieuwe fouten ontdekt</button>
-                <progress value="57" max="100"></progress>
+                <button class="button-nieuwe-fouten">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" width="23" height="23" fill="none">
+                        <!-- Circle Border -->
+                        <circle cx="20" cy="20" r="18" stroke="#F4A328" stroke-width="4" fill="#FFF7E8" />
+                      
+                        <!-- Exclamation Mark -->
+                        <rect x="18.5" y="10" width="3" height="15" fill="#F4A328" />
+                        <circle cx="20" cy="30" r="2" fill="#F4A328" />
+                      </svg>
+                    nieuwe fouten ontdekt
+                </button>
+                <progress value="57" max="100">57%</progress>
             </article>
 
             <!-- nieuwekijk -->
             <article>
                 <img src="./assets/images/nieuwekijk_logo.png" alt="nieuwekijk website logo">
-                <h2>Nieuwekijk</h2>
+                <h2 class="font-details-title">Nieuwekijk</h2>
                 <a href="#">nieuwekijk.nl</a>
-                <button>nieuwe fouten ontdekt</button>
+                <button class="button-nieuwe-fouten">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" width="23" height="23" fill="none">
+                        <!-- Circle Border -->
+                        <circle cx="20" cy="20" r="18" stroke="#F4A328" stroke-width="4" fill="#FFF7E8" />
+                      
+                        <!-- Exclamation Mark -->
+                        <rect x="18.5" y="10" width="3" height="15" fill="#F4A328" />
+                        <circle cx="20" cy="30" r="2" fill="#F4A328" />
+                      </svg>
+                    nieuwe fouten ontdekt
+                </button>
                 <progress value="100" max="100"></progress>
             </article>
 
             <!-- the bin -->
             <article>
                 <img src="./assets/images/the_bin_logo.png" alt="the bin logo">
-                <h2>The Bin</h2>
+                <h2 class="font-details-title">The Bin</h2>
                 <a href="#">nieuwekijk.nl</a>
-                <button>toegankelijk</button>
+                <button class="button-toegankelijk">toegankelijk</button>
                 <progress value="100" max="100"></progress>
             </article>
         </section>

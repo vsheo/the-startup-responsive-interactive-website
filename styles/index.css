@@ -1,0 +1,162 @@
+
+.menu {
+    display: flex;
+    flex-direction: column;
+
+    h3 {
+        button {
+            border: none;
+            background-color: inherit;
+        }
+    }
+}
+
+.main-content {
+    p {
+        margin-bottom: 0.2em;
+    }
+
+    h1 {
+        margin-top: 0;
+    }
+
+    article {
+        display: grid;
+        grid-template-columns: min-content 1fr;
+        grid-template-rows: min-content 1fr;
+        grid-template-areas:
+        "image title progress"
+        ". button progress"
+        ;
+
+        background-color: var(--background-secondary);
+        height: 10.5em;
+        width: 29.75em;
+        border-radius: 15px;
+
+        margin: 1em;
+
+        img {
+            grid-area: image;
+
+            justify-self: center;
+            align-self: center;
+            padding-left: 0.5em;
+            padding-right: 0.5em;
+
+            border-radius: 50%;
+            height: 2.5em;
+            width: 2.5em;
+        }
+
+        h2 {
+            grid-area: title;
+
+            white-space: nowrap;
+        }
+
+        a {
+            grid-area: title;
+
+            /* link onder de h2 */
+            align-self: end;
+        }
+
+        button {
+            grid-area: button;
+
+            border-radius: 235px;
+
+            /* center svg en tekst */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            svg {
+                margin-right: 1em;
+            }
+        }
+
+        progress {
+            grid-area: progress;
+
+            justify-self: center;
+            align-self: center;
+            margin-right: 1em;
+        }
+    }
+}
+
+/* progress bar */
+/* https://css-tip.com/circular-progress/ */
+@property --x {
+    syntax: '<integer>';
+    inherits: true;
+    initial-value: 100;
+}
+
+@property --y {
+    syntax: '<number>';
+    inherits: true;
+    initial-value: 1;
+}
+
+progress {
+    width: 110px;
+    height: 110px;
+    appearance: none;
+    position: relative;
+    animation: y 2s .5s both;
+    timeline-scope: --progress;
+}
+
+progress::-webkit-progress-bar {
+    overflow: auto;
+    visibility: hidden;
+}
+
+progress::-webkit-progress-value {
+    view-timeline: --progress inline;
+}
+
+progress::before,
+progress::after {
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    animation: x linear;
+    animation-timeline: --progress;
+    animation-range: entry 100% exit 100%;
+}
+
+progress::before {
+    content: counter(val) "%";
+    counter-reset: val calc(var(--y)*var(--x));
+    display: grid;
+    place-content: center;
+    font-family: system-ui, sans-serif;
+    font-weight: 900;
+    font-size: 1.8rem;
+}
+
+progress::after {
+    content: "";
+    background: color-mix(in hsl, #E80E0D, #7AB317 calc(1%*var(--x)));
+    padding: round(15%, 1px);
+    border-radius: 50%;
+    mask:
+        conic-gradient(#0000 0 0) subtract content-box,
+        conic-gradient(#000 calc(1%*var(--y)*var(--x)), #0000 0);
+}
+
+@keyframes x {
+    to {
+        --x: 0
+    }
+}
+
+@keyframes y {
+    0% {
+        --y: 0
+    }
+}

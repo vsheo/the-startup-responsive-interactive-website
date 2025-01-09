@@ -4,10 +4,12 @@
     margin: 0;
     padding: 0;
 
+    object-fit: cover;
+}
+
+ul li {
     list-style-type: none;
     list-style: none;
-
-    object-fit: cover;
 }
 
 a {
@@ -20,6 +22,7 @@ body {
     /* kleuren */
     --background-primary: #F0F0F0;
     --background-secondary: #FFFFFF;
+    background-color: var(--background-primary);
 
     --highlight: #0275FF;
 
@@ -34,9 +37,10 @@ body {
 
     --nfo-primary: #FF9800;
     --nfo-secondary: #FFD08A;
+    --nfo-button-secondary: #FFFAF3;
 
-    --ontoegankelijk-primary: #FFDADA;
-    --ontoegankelijk-secondary: #B50000;
+    --ontoegankelijk-primary: #B50000;
+    --ontoegankelijk-secondary: #FFDADA;
 
     /* typografie */
     --font-family-primary: 'Outfit', sans-serif;
@@ -106,7 +110,7 @@ body {
 .font-nav-headings {
     color: var(--highlight);
     font-size: var(--font-size-headings);
-    font-weight: var(--font-weight-semibold);
+    font-weight: var(--font-weight-bold);
 }
 
 .font-overzicht-title {
@@ -149,6 +153,26 @@ a {
 }
 
 .button-nieuwe-fouten {
-    background-color: var(--nfo-secondary);
+    background-color: var(--nfo-button-secondary);
     border-color: var(--nfo-primary);
+    color: var(--text-primary);
+    border: 1px solid var(--nfo-primary);
+    height: 50px;
+    width: 229px;
+}
+
+.button-ontoegankelijk {
+    background-color: var(--ontoegankelijk-secondary);
+    color: var(--ontoegankelijk-primary);
+    border: none;
+    height: 32px;
+    width: 142px;
+}
+
+.button-toegankelijk {
+    background-color: var(--toegankelijk-secondary);
+    color: var(--toegankelijk-primary);
+    border: none;
+    height: 32px;
+    width: 142px;
 }

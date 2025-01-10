@@ -28,15 +28,18 @@ body {
     --text-white: #FFFFFF;
     color: var(--text-primary);
 
-    --toegankelijk-primary: #00C858;
-    --toegankelijk-secondary: #BBFFD8;
+    /* toegankelijk */
+    --accessible-primary: #00C858;
+    --accessible-secondary: #BBFFD8;
 
+    /* nfo = nieuwe fouten ontdekt */
     --nfo-primary: #FF9800;
     --nfo-secondary: #FFD08A;
     --nfo-button-secondary: #FFFAF3;
 
-    --ontoegankelijk-primary: #B50000;
-    --ontoegankelijk-secondary: #FFDADA;
+    /* ontoegankelijk */
+    --inaccessible-primary: #B50000;
+    --inaccessible-secondary: #FFDADA;
 
     /* typografie */
     --font-family-primary: 'Outfit', sans-serif;
@@ -149,7 +152,7 @@ a {
     color: var(--highlight);
 }
 
-.button-nieuwe-fouten {
+.button-nfo {
     background-color: var(--nfo-button-secondary);
     border-color: var(--nfo-primary);
     color: var(--text-primary);
@@ -158,17 +161,19 @@ a {
     width: 229px;
 }
 
-.button-ontoegankelijk {
-    background-color: var(--ontoegankelijk-secondary);
-    color: var(--ontoegankelijk-primary);
+/* button voor ontoegankelijk */
+.button-inaccessible {
+    background-color: var(--inaccessible-secondary);
+    color: var(--inaccessible-primary);
     border: none;
     height: 32px;
     width: 142px;
 }
 
-.button-toegankelijk {
-    background-color: var(--toegankelijk-secondary);
-    color: var(--toegankelijk-primary);
+/* button voor toegankelijk */
+.button-accessible {
+    background-color: var(--accessible-secondary);
+    color: var(--accessible-primary);
     border: none;
     height: 32px;
     width: 142px;

@@ -13,12 +13,10 @@ ul li {
 }
 
 /* === GLOBAL === */
-
 body {
     /* kleuren */
     --background-primary: #F0F0F0;
     --background-secondary: #FFFFFF;
-    background-color: var(--background-primary);
 
     --highlight: #0275FF;
 
@@ -26,7 +24,6 @@ body {
 
     --text-primary: #5D666A;
     --text-white: #FFFFFF;
-    color: var(--text-primary);
 
     /* toegankelijk */
     --accessible-primary: #00C858;
@@ -44,8 +41,6 @@ body {
     /* typografie */
     --font-family-primary: 'Outfit', sans-serif;
     --line-height-primary: 21.6px;
-    line-height: var(--line-height-primary);
-    font-family: var(--font-family-primary);
 
     --font-size-primary: 16px;
     --font-size-secondary: 14px;
@@ -59,10 +54,17 @@ body {
     --font-weight-primary: 400;
     --font-weight-semibold: 600;
     --font-weight-bold: 700;
-    font-weight: var(--font-weight-primary);
 
     /* formulieren */
     --icon-primary: #5D666A;
+
+    /* global styling */
+    background-color: var(--background-primary);
+    color: var(--text-primary);
+
+    line-height: var(--line-height-primary);
+    font-family: var(--font-family-primary);
+    font-weight: var(--font-weight-primary);
 }
 
 

@@ -1,5 +1,5 @@
 /* === RESET === */
-.reset {
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -102,6 +102,11 @@ body {
     font-weight: var(--font-weight-bold);
 }
 
+.font-overzicht-title {
+    font-size: var(--font-size-title-s);
+    font-weight: var(--font-weight-semibold);
+}
+
 .font-nav-links {
     font-size: var(--font-size-headings);
     font-weight: var(--font-weight-semibold);
@@ -111,11 +116,6 @@ body {
     color: var(--highlight);
     font-size: var(--font-size-headings);
     font-weight: var(--font-weight-bold);
-}
-
-.font-overzicht-title {
-    font-size: var(--font-size-title-s);
-    font-weight: var(--font-weight-semibold);
 }
 
 a {

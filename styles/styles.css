@@ -1,4 +1,4 @@
-
+/* menu */
 .menu {
     display: flex;
     flex-direction: column;
@@ -11,6 +11,7 @@
     }
 }
 
+/* overzicht pagina */
 .overzicht-main-content {
     p {
         margin-bottom: 0.2em;
@@ -87,7 +88,7 @@
     }
 }
 
-
+/* details pagina */
 .details-main-content {
     p {
         margin-bottom: 0.2em;
@@ -154,6 +155,7 @@
             grid-area: title;
 
             white-space: nowrap;
+            margin-left: 1em;
         }
 
         .time-stamp {
@@ -161,16 +163,22 @@
 
             justify-self: end;
             text-align: end;
+            margin-right: 1em;
         }
 
         progress {
             grid-area: progress;
+
+            position: relative;
+            top: 0.5em
         }
 
-        p {
+        .nfo-tekst {
             grid-area: nfo;
 
             max-width: 18em;
+            margin-left: 2em;
+
             button {
                 border-radius: 59px;
 
@@ -196,12 +204,35 @@
             grid-area: aandacht;
 
             align-self: end;
+            padding: 0;
 
             /* split ul in 3 kolommen */
             column-count: 3;
 
             li {
                 white-space: nowrap;
+            }
+        }
+    }
+
+    /* zoek en filters */
+    aside {
+        display: grid;
+        grid-template-columns: min-content;
+        grid-template-rows: min-content;
+        grid-template-areas:
+        "zoek filters"
+        article {
+            h2 {
+                gri
+            }
+
+            svg {
+
+            }
+
+            input {
+
             }
         }
     }

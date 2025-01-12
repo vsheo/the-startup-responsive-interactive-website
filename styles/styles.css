@@ -342,9 +342,10 @@ main {
         background-color: var(--background-secondary);
 
         border-radius: 15px;
-        height: 11.8em;
         width: 23.8em;
+
         margin-top: 1em;
+        margin-bottom: 1em;
 
         .kaart-title {
             display: flex;
@@ -387,6 +388,8 @@ main {
         .kaart-footer {
             display: flex;
             flex-direction: row;
+            margin-top: auto;
+            margin-bottom: 1em;
 
             .icon-text {
                 margin-top: 1.2em;
@@ -396,6 +399,35 @@ main {
             }
         }
     }
+
+    /* height van de kaartjes als het wel of niet een button heeft */
+    /* https://developer.mozilla.org/en-US/docs/Web/CSS/:not */
+    /* https://developer.mozilla.org/en-US/docs/Web/CSS/:has */
+    .pagina-kaartje:not(:has(button)) {
+        height: 8.7em;
+    }
+
+    .pagina-kaartje:has(button) {
+        height: 11.8em;
+    }
+
+    /* add pagina kaart */
+    .pagina-kaartje-add {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        margin-bottom: 1em;
+
+        background-color: var(--background-secondary);
+
+        border-radius: 15px;
+        height: 6.2em;
+        width: 23.8em;
+    }
+
+
+
 }
 
 

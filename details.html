@@ -40,17 +40,17 @@
         </section>
 
         <!-- main top 2 kaartjes -->
-        <section class="details-main-content">
+        <section class="details-top-content">
             <p>Dashboard</p>
             <h1>Nieuwekijk</h1>
 
             <!-- toegankelijkheid kaart -->
             <article class="kaart-toegankelijkheid">
-                <h2>Toegankelijkheid</h2>
-                <progress value="70" max="100"></progress>
+                <h2 class="font-overzicht-title">Toegankelijkheid</h2>
+                <meter class="meter-circle" value="70" min="0" max="100"></meter>
                 <p>
                     <!-- Niveau A -->
-                    <span class="icon_text">
+                    <span class="icon-text">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 100 100">
                             <!-- Green Circle -->
                             <circle cx="50" cy="50" r="50" fill="#00C858" />
@@ -62,7 +62,7 @@
                     </span>
 
                     <!-- Niveau AA -->
-                    <span class="icon_text">
+                    <span class="icon-text">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 100 100">
                             <!-- Green Circle -->
                             <circle cx="50" cy="50" r="50" fill="#00C858" />
@@ -74,7 +74,7 @@
                     </span>
 
                     <!-- Niveau AAA -->
-                    <span class="icon_text">
+                    <span class="icon-text">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 100 100">
                             <!-- Green Circle -->
                             <circle cx="50" cy="50" r="50" fill="#00C858" />
@@ -89,15 +89,15 @@
 
             <!-- automatische scan kaart -->
             <article class="kaart-automatische-scan">
-                <h2>Automatische scan</h2>
+                <h2 class="font-overzicht-title">Automatische scan</h2>
                 <p class="time-stamp">
                     laatste scan <br />
                     23/4/2024
                 </p>
-                <progress value="54" max="100"></progress>
+                <meter class="meter-circle" value="54" min="0" max="100"></meter>
                 <!-- nieuwe fouten -->
                 <p class="nfo-tekst">
-                    <button class="button-nieuwe-fouten">
+                    <button class="button-nfo">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" width="23" height="23" fill="none">
                             <!-- Circle Border -->
                             <circle cx="20" cy="20" r="18" stroke="#F4A328" stroke-width="4" fill="#FFF7E8" />
@@ -115,7 +115,7 @@
                 <h3>Aandacht vereist</h3>
                 <ul>
                     <li>
-                        <span class="icon_text">
+                        <span class="icon-text">
                             <svg width="13" height="11" viewBox="0 0 13 11" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M6.77197 0.268485C7.1346 -0.0894951 7.72254 -0.0894951 8.08517 0.268485L12.728 4.85182C13.0907 5.2098 13.0907 5.7902 12.728 6.14818L8.08517 10.7315C7.72254 11.0895 7.1346 11.0895 6.77197 10.7315C6.40934 10.3735 6.40934 9.79313 6.77197 9.43515L9.82966 6.41667H0.928571C0.415736 6.41667 0 6.00626 0 5.5C0 4.99374 0.415736 4.58333 0.928571 4.58333H9.82966L6.77197 1.56485C6.40934 1.20687 6.40934 0.626466 6.77197 0.268485Z" fill="#5D666A"/>
                             </svg>
@@ -124,7 +124,7 @@
                     </li>
                     
                     <li>
-                        <span class="icon_text">
+                        <span class="icon-text">
                             <svg width="13" height="11" viewBox="0 0 13 11" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M6.77197 0.268485C7.1346 -0.0894951 7.72254 -0.0894951 8.08517 0.268485L12.728 4.85182C13.0907 5.2098 13.0907 5.7902 12.728 6.14818L8.08517 10.7315C7.72254 11.0895 7.1346 11.0895 6.77197 10.7315C6.40934 10.3735 6.40934 9.79313 6.77197 9.43515L9.82966 6.41667H0.928571C0.415736 6.41667 0 6.00626 0 5.5C0 4.99374 0.415736 4.58333 0.928571 4.58333H9.82966L6.77197 1.56485C6.40934 1.20687 6.40934 0.626466 6.77197 0.268485Z" fill="#5D666A"/>
                             </svg>
@@ -133,7 +133,7 @@
                     </li>
 
                     <li>
-                        <span class="icon_text">
+                        <span class="icon-text">
                             <svg width="13" height="11" viewBox="0 0 13 11" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M6.77197 0.268485C7.1346 -0.0894951 7.72254 -0.0894951 8.08517 0.268485L12.728 4.85182C13.0907 5.2098 13.0907 5.7902 12.728 6.14818L8.08517 10.7315C7.72254 11.0895 7.1346 11.0895 6.77197 10.7315C6.40934 10.3735 6.40934 9.79313 6.77197 9.43515L9.82966 6.41667H0.928571C0.415736 6.41667 0 6.00626 0 5.5C0 4.99374 0.415736 4.58333 0.928571 4.58333H9.82966L6.77197 1.56485C6.40934 1.20687 6.40934 0.626466 6.77197 0.268485Z" fill="#5D666A"/>
                             </svg>
@@ -142,7 +142,7 @@
                     </li>
 
                     <li>
-                        <span class="icon_text">
+                        <span class="icon-text">
                             <svg width="13" height="11" viewBox="0 0 13 11" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M6.77197 0.268485C7.1346 -0.0894951 7.72254 -0.0894951 8.08517 0.268485L12.728 4.85182C13.0907 5.2098 13.0907 5.7902 12.728 6.14818L8.08517 10.7315C7.72254 11.0895 7.1346 11.0895 6.77197 10.7315C6.40934 10.3735 6.40934 9.79313 6.77197 9.43515L9.82966 6.41667H0.928571C0.415736 6.41667 0 6.00626 0 5.5C0 4.99374 0.415736 4.58333 0.928571 4.58333H9.82966L6.77197 1.56485C6.40934 1.20687 6.40934 0.626466 6.77197 0.268485Z" fill="#5D666A"/>
                             </svg>
@@ -151,7 +151,7 @@
                     </li>
 
                     <li>
-                        <span class="icon_text">
+                        <span class="icon-text">
                             <svg width="13" height="11" viewBox="0 0 13 11" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M6.77197 0.268485C7.1346 -0.0894951 7.72254 -0.0894951 8.08517 0.268485L12.728 4.85182C13.0907 5.2098 13.0907 5.7902 12.728 6.14818L8.08517 10.7315C7.72254 11.0895 7.1346 11.0895 6.77197 10.7315C6.40934 10.3735 6.40934 9.79313 6.77197 9.43515L9.82966 6.41667H0.928571C0.415736 6.41667 0 6.00626 0 5.5C0 4.99374 0.415736 4.58333 0.928571 4.58333H9.82966L6.77197 1.56485C6.40934 1.20687 6.40934 0.626466 6.77197 0.268485Z" fill="#5D666A"/>
                             </svg>
@@ -160,7 +160,7 @@
                     </li>
 
                     <li>
-                        <span class="icon_text">
+                        <span class="icon-text">
                             <svg width="13" height="11" viewBox="0 0 13 11" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M6.77197 0.268485C7.1346 -0.0894951 7.72254 -0.0894951 8.08517 0.268485L12.728 4.85182C13.0907 5.2098 13.0907 5.7902 12.728 6.14818L8.08517 10.7315C7.72254 11.0895 7.1346 11.0895 6.77197 10.7315C6.40934 10.3735 6.40934 9.79313 6.77197 9.43515L9.82966 6.41667H0.928571C0.415736 6.41667 0 6.00626 0 5.5C0 4.99374 0.415736 4.58333 0.928571 4.58333H9.82966L6.77197 1.56485C6.40934 1.20687 6.40934 0.626466 6.77197 0.268485Z" fill="#5D666A"/>
                             </svg>
@@ -169,7 +169,7 @@
                     </li>
 
                     <li>
-                        <span class="icon_text">
+                        <span class="icon-text">
                             <svg width="13" height="11" viewBox="0 0 13 11" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M6.77197 0.268485C7.1346 -0.0894951 7.72254 -0.0894951 8.08517 0.268485L12.728 4.85182C13.0907 5.2098 13.0907 5.7902 12.728 6.14818L8.08517 10.7315C7.72254 11.0895 7.1346 11.0895 6.77197 10.7315C6.40934 10.3735 6.40934 9.79313 6.77197 9.43515L9.82966 6.41667H0.928571C0.415736 6.41667 0 6.00626 0 5.5C0 4.99374 0.415736 4.58333 0.928571 4.58333H9.82966L6.77197 1.56485C6.40934 1.20687 6.40934 0.626466 6.77197 0.268485Z" fill="#5D666A"/>
                             </svg>
@@ -178,7 +178,7 @@
                     </li>
 
                     <li>
-                        <span class="icon_text">
+                        <span class="icon-text">
                             <svg width="13" height="11" viewBox="0 0 13 11" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M6.77197 0.268485C7.1346 -0.0894951 7.72254 -0.0894951 8.08517 0.268485L12.728 4.85182C13.0907 5.2098 13.0907 5.7902 12.728 6.14818L8.08517 10.7315C7.72254 11.0895 7.1346 11.0895 6.77197 10.7315C6.40934 10.3735 6.40934 9.79313 6.77197 9.43515L9.82966 6.41667H0.928571C0.415736 6.41667 0 6.00626 0 5.5C0 4.99374 0.415736 4.58333 0.928571 4.58333H9.82966L6.77197 1.56485C6.40934 1.20687 6.40934 0.626466 6.77197 0.268485Z" fill="#5D666A"/>
                             </svg>
@@ -187,7 +187,7 @@
                     </li>
 
                     <li>
-                        <span class="icon_text">
+                        <span class="icon-text">
                             <svg width="13" height="11" viewBox="0 0 13 11" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M6.77197 0.268485C7.1346 -0.0894951 7.72254 -0.0894951 8.08517 0.268485L12.728 4.85182C13.0907 5.2098 13.0907 5.7902 12.728 6.14818L8.08517 10.7315C7.72254 11.0895 7.1346 11.0895 6.77197 10.7315C6.40934 10.3735 6.40934 9.79313 6.77197 9.43515L9.82966 6.41667H0.928571C0.415736 6.41667 0 6.00626 0 5.5C0 4.99374 0.415736 4.58333 0.928571 4.58333H9.82966L6.77197 1.56485C6.40934 1.20687 6.40934 0.626466 6.77197 0.268485Z" fill="#5D666A"/>
                             </svg>
@@ -199,9 +199,9 @@
         </section>
 
         <!-- zoek en filters -->
-        <aside>
+        <aside class="details-search-filters">
             <!-- searchbar -->
-            <article>
+            <article class="search-bar">
                 <h2 class="font-overzicht-title">Pagina zoeken</h2>
                 <svg width="17" height="19" viewBox="0 0 17 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M7.08036 15.515C5.10321 15.515 3.42887 14.7636 2.05735 13.2609C0.685803 11.7581 3.05176e-05 9.92358 3.05176e-05 7.75726C3.05176e-05 5.59094 0.685803 3.7564 2.05735 2.25363C3.42887 0.750885 5.10321 -0.000488281 7.08036 -0.000488281C9.05751 -0.000488281 10.7319 0.750885 12.1034 2.25363C13.4749 3.7564 14.1607 5.59094 14.1607 7.75726C14.1607 8.66315 14.0219 9.52837 13.7443 10.3529C13.2908 11.7004 13.2851 13.2769 14.2021 14.3634L16.7539 17.387C16.9142 17.5627 16.9962 17.7834 16.9999 18.0494C17.0036 18.3152 16.9216 18.5401 16.7539 18.7239C16.5862 18.9076 16.3828 18.9995 16.1438 18.9995C15.9049 18.9995 15.7015 18.9076 15.5338 18.7239L12.9342 15.6437C12.1027 14.6585 10.6156 14.5992 9.41598 15.071C8.66341 15.367 7.88487 15.515 7.08036 15.515ZM7.08036 13.6122C8.57214 13.6122 9.8357 13.045 10.871 11.9106C11.9064 10.7762 12.4241 9.39177 12.4241 7.75726C12.4241 6.12275 11.9064 4.7383 10.871 3.6039C9.8357 2.4695 8.57214 1.9023 7.08036 1.9023C5.58858 1.9023 4.32502 2.4695 3.28968 3.6039C2.25436 4.7383 1.7367 6.12275 1.7367 7.75726C1.7367 9.39177 2.25436 10.7762 3.28968 11.9106C4.32502 13.045 5.58858 13.6122 7.08036 13.6122Z" fill="#87929F"/>
@@ -210,52 +210,92 @@
             </article>
 
             <!-- filters -->
-            <h2 class="font-overzicht-title">Filters</h2>
-            <ul>
-                <li><button class="button-filter">voldoet niet (14)</button></li>
-                <li><button class="button-filter-active">voldoet (6)</button></li>
-                <li><button class="button-filter">A (25)</button></li>
-                <li><button class="button-filter">AA (13)</button></li>
-                <li><button class="button-filter">AAA (12)</button></li>
-            </ul>
-
-            <!-- pagina toevoegen -->
-            <button class="button-filter">
-                <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M5 0C5.39449 0 5.71429 0.319797 5.71429 0.714286V4.28571H9.28572C9.6802 4.28571 10 4.60551 10 5C10 5.39449 9.6802 5.71429 9.28572 5.71429H5.71429V9.28572C5.71429 9.6802 5.39449 10 5 10C4.60551 10 4.28571 9.6802 4.28571 9.28572V5.71429H0.714286C0.319797 5.71429 0 5.39449 0 5C0 4.60551 0.319797 4.28571 0.714286 4.28571H4.28571V0.714286C4.28571 0.319797 4.60551 0 5 0Z" fill="white"/>
-                </svg>
-                pagina toevoegen
-            </button>
+            <article class="filters-buttons">
+                <h2 class="font-overzicht-title">Filters</h2>
+                <ul>
+                    <li><button class="button-filter">voldoet niet (14)</button></li>
+                    <li><button class="button-filter-active">voldoet (6)</button></li>
+                    <li><button class="button-filter">A (25)</button></li>
+                    <li><button class="button-filter">AA (13)</button></li>
+                    <li><button class="button-filter">AAA (12)</button></li>
+                    <li>
+                        <!-- pagina toevoegen -->
+                        <button class="pagina-toevoegen button-filter">
+                            <svg width="10" height="10" viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M5 0C5.39449 0 5.71429 0.319797 5.71429 0.714286V4.28571H9.28572C9.6802 4.28571 10 4.60551 10 5C10 5.39449 9.6802 5.71429 9.28572 5.71429H5.71429V9.28572C5.71429 9.6802 5.39449 10 5 10C4.60551 10 4.28571 9.6802 4.28571 9.28572V5.71429H0.714286C0.319797 5.71429 0 5.39449 0 5C0 4.60551 0.319797 4.28571 0.714286 4.28571H4.28571V0.714286C4.28571 0.319797 4.60551 0 5 0Z"/>
+                            </svg>
+                            pagina toevoegen
+                        </button>
+                    </li>
+                </ul>
+            </article>
         </aside>
 
-        <!-- kaartjes voor elke pagina -->
-        <section>
-            <h2>over-ons</h2>
-            <a href="#">nieuwekijk.nl/over-ons</a>
-            <span>73%</span>
-            <progress value="73" max="100"></progress>
-            <button>
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" width="23" height="23" fill="none">
-                    <!-- Circle Border -->
-                    <circle cx="20" cy="20" r="18" stroke="#F4A328" stroke-width="4" fill="#FFF7E8" />
-                  
-                    <!-- Exclamation Mark -->
-                    <rect x="18.5" y="10" width="3" height="15" fill="#F4A328" />
-                    <circle cx="20" cy="30" r="2" fill="#F4A328" />
-                </svg>
-                mogelijk nieuwe fouten ontdekt
-            </button>
-            <!-- Niveau A -->
-            <span class="icon_text">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 100 100">
-                    <!-- Green Circle -->
-                    <circle cx="50" cy="50" r="50" fill="#00C858" />
+        <!-- kaartjes web pagina -->
+        <section class="details-pagina-kaartjes-container">
+
+            <!-- Pagina kaartje 1 -->
+            <article class="pagina-kaartje">
+                <span class="kaart-title font-overzicht-title">
+                    <h2>over-ons</h2>
+                    <span>73%</span>
+                </span>
+                <!-- link -->
+                <a href="#">nieuwekijk.nl/over-ons</a>
+                <!-- meter -->
+                <meter value="73" min="0" max="100"></meter>
+                <!-- button -->
+                <button class="button-nfo">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" width="23" height="23" fill="none">
+                        <!-- Circle Border -->
+                        <circle cx="20" cy="20" r="18" stroke="#F4A328" stroke-width="4" fill="#FFF7E8" />
                     
-                    <!-- White Checkmark -->
-                    <path d="M30 50 L45 65 L70 35" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" />
-                </svg>
-                <span>Niveau A</span>
-            </span>
+                        <!-- Exclamation Mark -->
+                        <rect x="18.5" y="10" width="3" height="15" fill="#F4A328" />
+                        <circle cx="20" cy="30" r="2" fill="#F4A328" />
+                    </svg>
+                    mogelijk nieuwe fouten ontdekt
+                </button>
+                <!-- icons -->
+                <article class="kaart-footer">
+                    <!-- Niveau A -->
+                    <span class="icon-text">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 100 100">
+                            <!-- Green Circle -->
+                            <circle cx="50" cy="50" r="50" fill="#00C858" />
+                            
+                            <!-- White Checkmark -->
+                            <path d="M30 50 L45 65 L70 35" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <span>Niveau A</span>
+                    </span>
+
+                    <!-- Niveau AA -->
+                    <span class="icon-text">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 100 100">
+                            <!-- Green Circle -->
+                            <circle cx="50" cy="50" r="50" fill="#00C858" />
+                            
+                            <!-- White Checkmark -->
+                            <path d="M30 50 L45 65 L70 35" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <span>Niveau AA</span>
+                    </span>
+
+                    <!-- Niveau AAA -->
+                    <span class="icon-text">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 100 100">
+                            <!-- Green Circle -->
+                            <circle cx="50" cy="50" r="50" fill="#00C858" />
+                            
+                            <!-- White Checkmark -->
+                            <path d="M30 50 L45 65 L70 35" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <span>Niveau AA</span>
+                    </span>
+                </article>
+            </article>
+
         </section>
     </main>
 </body>

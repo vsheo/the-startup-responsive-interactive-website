@@ -1,12 +1,27 @@
+/* main */
+main {
+    margin-left: 3em;
+}
+
 /* menu */
 .menu {
     display: flex;
     flex-direction: column;
 
+    margin-bottom: 3em;
+
     h3 {
         button {
             border: none;
             background-color: inherit;
+        }
+    }
+
+    ul {
+        margin-bottom: 1em;
+
+        li {
+            margin-bottom: 0.4em;
         }
     }
 }
@@ -42,8 +57,10 @@
 
             justify-self: center;
             align-self: center;
-            padding-left: 0.5em;
-            padding-right: 0.5em;
+
+            margin-left: 0.5em;
+            margin-right: 0.5em;
+
 
             border-radius: 50%;
             height: 2.5em;
@@ -54,6 +71,8 @@
             grid-area: title;
 
             white-space: nowrap;
+            margin-top: 0.9em;
+            margin-bottom: 0.9em;
         }
 
         a {
@@ -66,19 +85,21 @@
         button {
             grid-area: button;
 
-            border-radius: 59px;
-
             /* center svg en tekst */
             display: flex;
             align-items: center;
             justify-content: center;
+
+            margin-top: 1em;
+            margin-left: 0.5em;
+
 
             svg {
                 margin-right: 1em;
             }
         }
 
-        progress {
+        meter {
             grid-area: progress;
 
             justify-self: center;
@@ -89,15 +110,18 @@
 }
 
 /* details pagina */
-.details-main-content {
+.details-top-content {
     p {
         margin-bottom: 0.2em;
     }
 
     h1 {
         margin-top: 0;
+
+        margin-bottom: 1em;
     }
 
+    /* kaart toegankelijkheid */
     .kaart-toegankelijkheid {
         display: grid;
         grid-template-columns: min-content 1fr;
@@ -112,13 +136,18 @@
         width: 17.8em;
         border-radius: 15px;
 
+        margin-bottom: 1em;
+
+        /* toegankelijkheid */
         h2 {
             grid-area: title;
 
+            margin-top: 0.8em;
+            margin-bottom: 1.3em;
             margin-left: 1.5em;
         }
 
-        progress {
+        meter {
             grid-area: progress;
 
             margin-left: 1.5em;
@@ -137,6 +166,7 @@
         }
     }
 
+    /* kaart automatische scan */
     .kaart-automatische-scan {
         display: grid;
         grid-template-columns: min-content 1fr 1fr;
@@ -151,10 +181,14 @@
         width: 54.94em;
         border-radius: 15px;
 
+        margin-bottom: 2em;
+
+        /* automatische scan */
         h2 {
             grid-area: title;
 
             white-space: nowrap;
+            margin-top: 0.8em;
             margin-left: 1em;
         }
 
@@ -163,29 +197,30 @@
 
             justify-self: end;
             text-align: end;
+            margin-top: 0.8em;
             margin-right: 1em;
         }
 
-        progress {
+        meter {
             grid-area: progress;
 
-            position: relative;
-            top: 0.5em
+            margin-left: 1em;
+            margin-top: 1em;
         }
 
         .nfo-tekst {
             grid-area: nfo;
 
             max-width: 18em;
+            margin-top: 1em;
             margin-left: 2em;
 
             button {
-                border-radius: 59px;
-
                 /* center svg en tekst */
                 display: flex;
                 align-items: center;
                 justify-content: center;
+                margin-bottom: 1em;
 
                 svg {
                     margin-right: 1em;
@@ -193,18 +228,21 @@
             }
         }
 
+        /* aandacht vereist */
         h3 {
             grid-area: aandacht;
 
             font-weight: var(--font-weight-bold);
             white-space: nowrap;
+
+            margin-top: 1em;
         }
 
         ul {
             grid-area: aandacht;
 
             align-self: end;
-            padding: 0;
+            margin-bottom: 2em;
 
             /* split ul in 3 kolommen */
             column-count: 3;
@@ -214,25 +252,147 @@
             }
         }
     }
+}
 
-    /* zoek en filters */
-    aside {
-        display: grid;
-        grid-template-columns: min-content;
-        grid-template-rows: min-content;
-        grid-template-areas:
-        "zoek filters"
-        article {
-            h2 {
-                gri
+/* zoek en filters */
+.details-search-filters {
+    display: grid;
+    grid-template-columns: min-content;
+    grid-template-rows: min-content;
+    grid-template-areas:
+    "zoek filters"
+    ;
+
+    /* search bar */
+    .search-bar {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+
+        svg {
+            z-index: 100;
+
+            position: relative;
+            top: 1em;
+            left: 1em;
+        }
+
+        input[type="text"] {
+            position: relative;
+            top: -0.5em;
+
+            border: none;
+            border-radius: 15px;
+
+            height: 2.1em;
+            width: 13.3em;
+        }
+
+        input::placeholder {
+            padding-left: 3em;
+        }
+    }
+
+    /* filter buttons */
+    .filters-buttons {
+        ul {
+            display: flex;
+            flex-direction: row;
+            gap: 2em;
+            margin-top: 0.8em;
+            margin-left: 1em;
+
+            li {
+                button {
+                    border: none;
+                    border-radius: 5px;
+
+                    height: 2em;
+                    width: 9em;
+                }
             }
+
+            li:last-child {
+                button {
+                    height: 2.3em;
+                    width: 12.6em;
+
+                    svg {
+                        fill: var(--text-light);
+                    }
+                }
+
+                button:hover {
+                    svg {
+                        fill: var(--highlight);
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* web pagina kaartjes */
+.details-pagina-kaartjes-container {
+
+    .pagina-kaartje {
+        display: flex;
+        flex-direction: column;
+
+        background-color: var(--background-secondary);
+
+        border-radius: 15px;
+        height: 11.8em;
+        width: 23.8em;
+        margin-top: 1em;
+
+        .kaart-title {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            margin-top: 0.8em;
+            margin-left: 1em;
+            margin-right: 1em;
+        }
+
+        /* link */
+        a {
+            margin-left: 1.6em;
+        }
+
+        meter {
+            align-self: center;
+            width: 21.5em;
+        }
+
+        button {
+            display: flex;
+            /* positie van de button */
+            align-self: center;
+            /* content binnen de button */
+            align-items: center;
+            justify-content: center;
+
+            margin-top: 1em;
+            margin-left: 0.5em;
+
+            width: 25em;
 
             svg {
-
+                margin-right: 0.4em;
             }
+        }
 
-            input {
+        .kaart-footer {
+            display: flex;
+            flex-direction: row;
 
+            .icon-text {
+                margin-top: 1.2em;
+                margin-left: 1em;
+                margin-right: 1em;
+                white-space: nowrap;
             }
         }
     }
@@ -267,26 +427,27 @@
     initial-value: 1;
 }
 
-progress {
+.meter-circle {
     width: 110px;
     height: 110px;
+    border-radius: 50%;
     appearance: none;
     position: relative;
     animation: y 2s .5s both;
     timeline-scope: --progress;
 }
 
-progress::-webkit-progress-bar {
+.meter-circle::-webkit-meter-bar {
     overflow: auto;
     visibility: hidden;
 }
 
-progress::-webkit-progress-value {
+.meter-circle::-webkit-meter-value {
     view-timeline: --progress inline;
 }
 
-progress::before,
-progress::after {
+.meter-circle::before,
+.meter-circle::after {
     position: absolute;
     inset: 0;
     border-radius: 50%;
@@ -295,7 +456,7 @@ progress::after {
     animation-range: entry 100% exit 100%;
 }
 
-progress::before {
+.meter-circle::before {
     content: counter(val) "%";
     counter-reset: val calc(var(--y)*var(--x));
     display: grid;
@@ -305,7 +466,7 @@ progress::before {
     font-size: 1.8rem;
 }
 
-progress::after {
+.meter-circle::after {
     content: "";
     background: color-mix(in hsl, #E80E0D, #7AB317 calc(1%*var(--x)));
     padding: round(15%, 1px);

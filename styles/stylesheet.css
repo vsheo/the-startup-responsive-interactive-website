@@ -174,7 +174,8 @@ a {
     border-radius: 59px;
     height: 50px;
     /* width: 229px; */
-    width: clamp(229px, 50%, 323px);
+    min-width: 185px;
+    max-width: 229px;
 }
 
 /* button voor ontoegankelijk */

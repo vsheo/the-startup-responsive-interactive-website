@@ -39,7 +39,7 @@ main {
 
     article {
         display: grid;
-        grid-template-columns: min-content 1fr;
+        grid-template-columns: min-content 18.5em 1fr;
         grid-template-rows: min-content 1fr;
         grid-template-areas:
         "image title progress"
@@ -48,12 +48,31 @@ main {
 
         background-color: var(--background-secondary);
         height: 10.5em;
-        max-width: clamp(17em, 29.8em, 29.8em);
+        min-width: 17em;
+        max-width: 29.8em;
         border-radius: 15px;
 
         margin-top: 1em;
         margin-bottom: 1em;
         margin-right: 1em;
+
+        @media (max-width: 510px) {
+            grid-template-columns: min-content min-content 1fr;
+            grid-template-rows: min-content 1fr;
+
+            height: 15em;
+        }
+
+        @media (max-width: 430px) {
+            grid-template-columns: min-content 1fr;
+            grid-template-rows: min-content min-content 1fr;
+            grid-template-areas:
+            "image title"
+            ". button"
+            ". progress"
+            ;
+            height: 20em;
+        }
 
         img {
             grid-area: image;
@@ -95,6 +114,7 @@ main {
 
             margin-top: 1em;
             margin-left: 0.5em;
+            margin-right: 1em;
 
 
             svg {

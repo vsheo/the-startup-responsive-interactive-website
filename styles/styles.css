@@ -1,6 +1,7 @@
 /* main */
 main {
-    margin-left: 3em;
+    margin-top: 1em;
+    margin-left: 1em;
 }
 
 /* menu */
@@ -28,11 +29,11 @@ main {
 
 /* overzicht pagina */
 .overzicht-main-content {
-    p {
+    h1 {
         margin-bottom: 0.2em;
     }
 
-    h1 {
+    h2 {
         margin-top: 0;
     }
 
@@ -47,10 +48,12 @@ main {
 
         background-color: var(--background-secondary);
         height: 10.5em;
-        width: 29.75em;
+        max-width: clamp(17em, 29.8em, 29.8em);
         border-radius: 15px;
 
-        margin: 1em;
+        margin-top: 1em;
+        margin-bottom: 1em;
+        margin-right: 1em;
 
         img {
             grid-area: image;
@@ -67,7 +70,7 @@ main {
             width: 2.5em;
         }
 
-        h2 {
+        h3 {
             grid-area: title;
 
             white-space: nowrap;
@@ -109,7 +112,7 @@ main {
     }
 }
 
-/* details pagina */
+/* details pagina: top content */
 .details-top-content {
     p {
         margin-bottom: 0.2em;
@@ -139,7 +142,7 @@ main {
         margin-bottom: 1em;
 
         /* toegankelijkheid */
-        h2 {
+        h3 {
             grid-area: title;
 
             margin-top: 0.8em;
@@ -184,7 +187,7 @@ main {
         margin-bottom: 2em;
 
         /* automatische scan */
-        h2 {
+        h3 {
             grid-area: title;
 
             white-space: nowrap;
@@ -229,7 +232,7 @@ main {
         }
 
         /* aandacht vereist */
-        h3 {
+        h4 {
             grid-area: aandacht;
 
             font-weight: var(--font-weight-bold);
@@ -254,7 +257,7 @@ main {
     }
 }
 
-/* zoek en filters */
+/* details pagina: zoek en filters */
 .details-search-filters {
     display: grid;
     grid-template-columns: min-content;
@@ -332,7 +335,7 @@ main {
     }
 }
 
-/* web pagina kaartjes */
+/* details pagina: web pagina kaartjes */
 .details-pagina-kaartjes-container {
 
     .pagina-kaartje {

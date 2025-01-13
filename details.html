@@ -14,9 +14,9 @@
         <!-- menu -->
         <section class="menu">
             <h2 class="font-nav-headings">AccessDash</h2>
-            <h3>
+            <h2>
                 <button class="font-nav-headings">Dashboard</button>
-            </h3>
+            </h2>
             <ul>
                 <li><a href="#">Dashboard</a></li>
                 <li><a href="#">Info</a></li>
@@ -24,9 +24,9 @@
                 <li><a href="#">Scan</a></li>
             </ul>
 
-            <h3>
+            <h2>
                 <button class="font-nav-headings">Nieuwekijk</button>
-            </h3>
+            </h2>
             <ul>
                 <li><a href="#">/home</a></li>
                 <li><a href="#">/over-ons</a></li>
@@ -41,12 +41,12 @@
 
         <!-- main top 2 kaartjes -->
         <section class="details-top-content">
-            <p>Dashboard</p>
-            <h1>Nieuwekijk</h1>
+            <h1>Dashboard</h1>
+            <h2>Nieuwekijk</h2>
 
             <!-- toegankelijkheid kaart -->
             <article class="kaart-toegankelijkheid">
-                <h2 class="font-overzicht-title">Toegankelijkheid</h2>
+                <h3 class="font-overzicht-title">Toegankelijkheid</h3>
                 <meter class="meter-circle" value="70" min="0" max="100"></meter>
                 <p>
                     <!-- Niveau A -->
@@ -89,9 +89,9 @@
 
             <!-- automatische scan kaart -->
             <article class="kaart-automatische-scan">
-                <h2 class="font-overzicht-title">Automatische scan</h2>
+                <h3 class="font-overzicht-title">Automatische scan</h3>
                 <p class="time-stamp">
-                    laatste scan <br />
+                    laatste scan <br>
                     23/4/2024
                 </p>
                 <meter class="meter-circle" value="54" min="0" max="100"></meter>
@@ -112,7 +112,7 @@
                     volledig beeld.
                 </p>
                 <!-- aandacht vereist -->
-                <h3>Aandacht vereist</h3>
+                <h4>Aandacht vereist</h4>
                 <ul>
                     <li>
                         <span class="icon-text">
@@ -202,7 +202,7 @@
         <aside class="details-search-filters">
             <!-- searchbar -->
             <article class="search-bar">
-                <h2 class="font-overzicht-title">Pagina zoeken</h2>
+                <h3 class="font-overzicht-title">Pagina zoeken</h3>
                 <svg width="17" height="19" viewBox="0 0 17 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M7.08036 15.515C5.10321 15.515 3.42887 14.7636 2.05735 13.2609C0.685803 11.7581 3.05176e-05 9.92358 3.05176e-05 7.75726C3.05176e-05 5.59094 0.685803 3.7564 2.05735 2.25363C3.42887 0.750885 5.10321 -0.000488281 7.08036 -0.000488281C9.05751 -0.000488281 10.7319 0.750885 12.1034 2.25363C13.4749 3.7564 14.1607 5.59094 14.1607 7.75726C14.1607 8.66315 14.0219 9.52837 13.7443 10.3529C13.2908 11.7004 13.2851 13.2769 14.2021 14.3634L16.7539 17.387C16.9142 17.5627 16.9962 17.7834 16.9999 18.0494C17.0036 18.3152 16.9216 18.5401 16.7539 18.7239C16.5862 18.9076 16.3828 18.9995 16.1438 18.9995C15.9049 18.9995 15.7015 18.9076 15.5338 18.7239L12.9342 15.6437C12.1027 14.6585 10.6156 14.5992 9.41598 15.071C8.66341 15.367 7.88487 15.515 7.08036 15.515ZM7.08036 13.6122C8.57214 13.6122 9.8357 13.045 10.871 11.9106C11.9064 10.7762 12.4241 9.39177 12.4241 7.75726C12.4241 6.12275 11.9064 4.7383 10.871 3.6039C9.8357 2.4695 8.57214 1.9023 7.08036 1.9023C5.58858 1.9023 4.32502 2.4695 3.28968 3.6039C2.25436 4.7383 1.7367 6.12275 1.7367 7.75726C1.7367 9.39177 2.25436 10.7762 3.28968 11.9106C4.32502 13.045 5.58858 13.6122 7.08036 13.6122Z" fill="#87929F"/>
                 </svg>
@@ -211,7 +211,7 @@
 
             <!-- filters -->
             <article class="filters-buttons">
-                <h2 class="font-overzicht-title">Filters</h2>
+                <h3 class="font-overzicht-title">Filters</h3>
                 <ul>
                     <li><button class="button-filter">voldoet niet (14)</button></li>
                     <li><button class="button-filter-active">voldoet (6)</button></li>
@@ -232,14 +232,14 @@
         </aside>
 
         <!-- kaartjes web pagina -->
-        <section class="details-pagina-kaartjes-container">
+        <div class="details-pagina-kaartjes-container">
 
             <!-- Pagina kaartje 1 -->
             <article class="pagina-kaartje">
-                <span class="kaart-title font-overzicht-title">
-                    <h2>over-ons</h2>
+                <h3 class="kaart-title font-overzicht-title">
+                    <span>over-ons</span>
                     <span>73%</span>
-                </span>
+                </h3>
                 <!-- link -->
                 <a href="#">nieuwekijk.nl/over-ons</a>
                 <!-- meter -->
@@ -257,7 +257,7 @@
                     mogelijk nieuwe fouten ontdekt
                 </button>
                 <!-- icons -->
-                <article class="kaart-footer">
+                <div class="kaart-footer">
                     <!-- Niveau A -->
                     <span class="icon-text">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 100 100">
@@ -293,15 +293,15 @@
                         </svg>
                         <span>Niveau AA</span>
                     </span>
-                </article>
+                </div>
             </article>
 
             <!-- Pagina kaartje 2 -->
             <article class="pagina-kaartje">
-                <span class="kaart-title font-overzicht-title">
-                    <h2>over-ons</h2>
+                <h3 class="kaart-title font-overzicht-title">
+                    <span>over-ons</span>
                     <span>73%</span>
-                </span>
+                </h3>
                 <!-- link -->
                 <a href="#">nieuwekijk.nl/over-ons</a>
                 <!-- meter -->
@@ -319,7 +319,7 @@
                     mogelijk nieuwe fouten ontdekt
                 </button>
                 <!-- icons -->
-                <article class="kaart-footer">
+                <div class="kaart-footer">
                     <!-- Niveau A -->
                     <span class="icon-text">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 100 100">
@@ -331,21 +331,21 @@
                         </svg>
                         <span>Niveau A</span>
                     </span>
-                </article>
+                </div>
             </article>
 
             <!-- Pagina kaartje 3 -->
             <article class="pagina-kaartje">
-                <span class="kaart-title font-overzicht-title">
-                    <h2>over-ons</h2>
+                <h3 class="kaart-title font-overzicht-title">
+                    <span>over-ons</span>
                     <span>73%</span>
-                </span>
+                </h3>
                 <!-- link -->
                 <a href="#">nieuwekijk.nl/over-ons</a>
                 <!-- meter -->
                 <meter value="73" min="0" max="100"></meter>
                 <!-- icons -->
-                <article class="kaart-footer">
+                <div class="kaart-footer">
                     <!-- Niveau A -->
                     <span class="icon-text">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 100 100">
@@ -357,21 +357,21 @@
                         </svg>
                         <span>Niveau A</span>
                     </span>
-                </article>
+                </div>
             </article>
 
             <!-- Pagina kaartje 4 -->
             <article class="pagina-kaartje">
-                <span class="kaart-title font-overzicht-title">
-                    <h2>over-ons</h2>
+                <h3 class="kaart-title font-overzicht-title">
+                    <span>over-ons</span>
                     <span>100%</span>
-                </span>
+                </h3>
                 <!-- link -->
                 <a href="#">nieuwekijk.nl/over-ons</a>
                 <!-- meter -->
                 <meter value="100" min="0" max="100"></meter>
                 <!-- icons -->
-                <article class="kaart-footer">
+                <div class="kaart-footer">
                     <!-- Niveau A -->
                     <span class="icon-text">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 100 100">
@@ -395,21 +395,21 @@
                         </svg>
                         <span>Niveau AA</span>
                     </span>
-                </article>
+                </div>
             </article>
 
             <!-- Pagina kaartje 5 -->
             <article class="pagina-kaartje">
-                <span class="kaart-title font-overzicht-title">
-                    <h2>over-ons</h2>
+                <h3 class="kaart-title font-overzicht-title">
+                    <span>over-ons</span>
                     <span>100%</span>
-                </span>
+                </h3>
                 <!-- link -->
                 <a href="#">nieuwekijk.nl/over-ons</a>
                 <!-- meter -->
                 <meter value="100" min="0" max="100"></meter>
                 <!-- icons -->
-                <article class="kaart-footer">
+                <div class="kaart-footer">
                     <!-- Niveau A -->
                     <span class="icon-text">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 100 100">
@@ -433,21 +433,21 @@
                         </svg>
                         <span>Niveau AA</span>
                     </span>
-                </article>
+                </div>
             </article>
 
             <!-- Pagina kaartje 6 -->
             <article class="pagina-kaartje">
-                <span class="kaart-title font-overzicht-title">
-                    <h2>over-ons</h2>
+                <h3 class="kaart-title font-overzicht-title">
+                    <span>over-ons</span>
                     <span>73%</span>
-                </span>
+                </h3>
                 <!-- link -->
                 <a href="#">nieuwekijk.nl/over-ons</a>
                 <!-- meter -->
                 <meter value="73" min="0" max="100"></meter>
                 <!-- icons -->
-                <article class="kaart-footer">
+                <div class="kaart-footer">
                     <!-- Niveau A -->
                     <span class="icon-text">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 100 100">
@@ -459,21 +459,21 @@
                         </svg>
                         <span>Niveau A</span>
                     </span>
-                </article>
+                </div>
             </article>
 
             <!-- Pagina kaartje 7 -->
             <article class="pagina-kaartje">
-                <span class="kaart-title font-overzicht-title">
-                    <h2>over-ons</h2>
+                <h3 class="kaart-title font-overzicht-title">
+                    <span>over-ons</span>
                     <span>73%</span>
-                </span>
+                </h3>
                 <!-- link -->
                 <a href="#">nieuwekijk.nl/over-ons</a>
                 <!-- meter -->
                 <meter value="73" min="0" max="100"></meter>
                 <!-- icons -->
-                <article class="kaart-footer">
+                <div class="kaart-footer">
                     <!-- Niveau A -->
                     <span class="icon-text">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 100 100">
@@ -485,21 +485,21 @@
                         </svg>
                         <span>Niveau A</span>
                     </span>
-                </article>
+                </div>
             </article>
 
             <!-- Pagina kaartje 8 -->
             <article class="pagina-kaartje">
-                <span class="kaart-title font-overzicht-title">
-                    <h2>over-ons</h2>
+                <h3 class="kaart-title font-overzicht-title">
+                    <span>over-ons</span>
                     <span>73%</span>
-                </span>
+                </h3>
                 <!-- link -->
                 <a href="#">nieuwekijk.nl/over-ons</a>
                 <!-- meter -->
                 <meter value="73" min="0" max="100"></meter>
                 <!-- icons -->
-                <article class="kaart-footer">
+                <div class="kaart-footer">
                     <!-- Niveau A -->
                     <span class="icon-text">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 100 100">
@@ -511,21 +511,21 @@
                         </svg>
                         <span>Niveau A</span>
                     </span>
-                </article>
+                </div>
             </article>
 
             <!-- Pagina kaartje 9 -->
             <article class="pagina-kaartje">
-                <span class="kaart-title font-overzicht-title">
-                    <h2>over-ons</h2>
+                <h3 class="kaart-title font-overzicht-title">
+                    <span>over-ons</span>
                     <span>100%</span>
-                </span>
+                </h3>
                 <!-- link -->
                 <a href="#">nieuwekijk.nl/over-ons</a>
                 <!-- meter -->
                 <meter value="100" min="0" max="100"></meter>
                 <!-- icons -->
-                <article class="kaart-footer">
+                <div class="kaart-footer">
                     <!-- Niveau A -->
                     <span class="icon-text">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 100 100">
@@ -549,17 +549,21 @@
                         </svg>
                         <span>Niveau AA</span>
                     </span>
-                </article>
+                </div>
             </article>
 
             <!-- add Pagina kaartje -->
             <article class="pagina-kaartje-add">
-                    <svg width="22" height="17" viewBox="0 0 22 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M10.8711 0C11.6931 0 12.3594 0.671573 12.3594 1.5V9H19.8008C20.6228 9 21.2891 9.67157 21.2891 10.5C21.2891 11.3284 20.6228 12 19.8008 12H12.3594V19.5C12.3594 20.3284 11.6931 21 10.8711 21C10.0492 21 9.38284 20.3284 9.38284 19.5V12H1.94144C1.11948 12 0.453156 11.3284 0.453156 10.5C0.453156 9.67157 1.11948 9 1.94144 9H9.38284V1.5C9.38284 0.671573 10.0492 0 10.8711 0Z" fill="#5D666A"/>
+                <h3>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 21" fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M10.8711 0C11.6931 0 12.3594 0.671573 12.3594 1.5V9H19.8008C20.6228 9 21.2891 9.67157 21.2891 10.5C21.2891 11.3284 20.6228 12 19.8008 12H12.3594V19.5C12.3594 20.3284 11.6931 21 10.8711 21C10.0492 21 9.38284 20.3284 9.38284 19.5V12H1.94144C1.11948 12 0.453156 11.3284 0.453156 10.5C0.453156 9.67157 1.11948 9 1.94144 9H9.38284V1.5C9.38284 0.671573 10.0492 0 10.8711 0Z"
+                            fill="#5D666A"/>
                     </svg>
                     <span class="font-details-title">Pagina toevoegen</span>
+                </h3>
             </article>
-        </section>
+        </div>
     </main>
 </body>
 

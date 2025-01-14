@@ -198,9 +198,17 @@ main {
 
 /* details pagina: top content */
 .details-top-content {
+    margin-top: 1em;
+
     @media (min-width: 750px) {
         margin-top: 7em;
         margin-left: 15em;
+    }
+
+    @media (min-width: 1340px) {
+        display: flex;
+        flex-direction: row;
+        gap: 1em;
     }
 
     /* kaart toegankelijkheid */
@@ -272,12 +280,12 @@ main {
         margin-bottom: 2em;
         margin-right: 0.5em;
 
-        @media (min-width: 320px) and (max-width: 750px) {
+        @media (min-width: 320px) and (max-width: 1030px) {
             display: flex;
             flex-direction: column;
         }
 
-        @media (min-width: 600px) {
+        @media (min-width: 580px) and (max-width: 1030px) {
             display: grid;
             grid-template-columns: min-content 1fr;
             grid-template-rows: min-content min-content 1fr;
@@ -305,12 +313,12 @@ main {
             margin-top: 0.8em;
             margin-right: 1em;
 
-            @media (min-width: 320px) and (max-width: 750px) {
+            @media (min-width: 320px) and (max-width: 600px) {
                 margin-right: auto;
                 margin-left: 2em;
             }
 
-            @media (min-width: 600px) {
+            @media (min-width: 580px) and (max-width: 600px) {
                 margin-top: 2.5em;
             }
         }
@@ -387,7 +395,7 @@ main {
                 margin-left: 2em;
             }
 
-            @media (min-width: 600px) {
+            @media (min-width: 580px) {
                 margin: 2.5em;
             }
 
@@ -416,6 +424,10 @@ main {
 
     @media (min-width: 750px) {
         margin-left: 13.5em;
+    }
+
+    @media (min-width: 915px) {
+        flex-direction: row;
     }
 
     /* search bar */
@@ -456,6 +468,7 @@ main {
             gap: 2em;
             margin-top: 0.8em;
             margin-left: 1em;
+            margin-right: 1em;
 
             column-count: 2;
 
@@ -466,7 +479,7 @@ main {
                 gap: 1em;
             }
 
-            @media (min-width: 520px) and (max-width: 750px) {
+            @media (min-width: 520px) and (max-width: 1370px) {
                 display: grid;
                 grid-template-columns: repeat(3, 1fr);
             }
@@ -507,8 +520,19 @@ main {
 
 /* details pagina: web pagina kaartjes */
 .details-pagina-kaartjes-container {
+    margin-right: 1em;
+
     @media (min-width: 750px) {
         margin-left: 13.5em;
+    }
+
+    @media (min-width: 990px) {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (min-width: 1360px) {
+        grid-template-columns: repeat(3, 1fr);
     }
 
     .pagina-kaartje {

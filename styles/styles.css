@@ -25,6 +25,8 @@ main {
         height: 100%;
         background-color: var(--background-secondary);
         padding: 1em;
+
+        z-index: 150;
     }
 
     h2 {
@@ -85,7 +87,6 @@ main {
     }
 }
 
-
 .overzicht-main-content {
     @media (min-width: 750px) {
         display: flex;
@@ -95,15 +96,12 @@ main {
         margin-left: 15em;
     }
 
-    /* @media (min-width: 750px) {
+    @media (min-width: 1250px) {
         display: grid;
         grid-template-columns: min-content min-content;
         grid-template-rows: min-content min-content;
         grid-gap: 1em;
-
-        margin-top: 7em;
-        margin-left: 3em;
-    } */
+    }
 
     article {
         display: grid;
@@ -139,6 +137,7 @@ main {
             ". button"
             ". progress"
             ;
+
             height: 20em;
         }
 

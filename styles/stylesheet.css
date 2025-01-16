@@ -79,7 +79,7 @@ body {
 /* normal */
 @font-face {
     font-family: 'Outfit';
-    src: url('fonts/outfit-v11-latin-regular.woff2') format('woff2');
+    src: url('../fonts/outfit-v11-latin-regular.woff2') format('woff2');
     font-weight: var(--font-weight-primary);
     font-style: normal;
 }
@@ -87,7 +87,7 @@ body {
 /* semibold */
 @font-face {
     font-family: 'Outfit';
-    src: url('fonts/outfit-v11-latin-regular.woff2') format('woff2');
+    src: url('../fonts/outfit-v11-latin-regular.woff2') format('woff2');
     font-weight: var(--font-weight-semibold);
     font-style: normal;
 }
@@ -95,7 +95,7 @@ body {
 /* bold */
 @font-face {
     font-family: 'Outfit';
-    src: url('fonts/outfit-v11-latin-regular.woff2') format('woff2');
+    src: url('../fonts/outfit-v11-latin-regular.woff2') format('woff2');
     font-weight: var(--font-weight-bold);
     font-style: normal;
 }

@@ -1,0 +1,109 @@
+// wat doet deze script?
+// 1: haalt display none weg van het hamburger menu
+// zodat er geen hamburger menu is als JS niet inlaad (het menu is dan open)
+// 2: add class om menu te krijgen.
+// 3: voegt de atribute inert toe of haalt het weg wanneer dat nodig is.
+// zodat je niet met tab in het menu kan als het menu gesloten is.
+// source: https://www.youtube.com/watch?v=m7YDWNz65iI
+
+// selecteer de buttons om het menu open en dicht te maken
+const menuButtonOpen = document.querySelector('.open-menu');
+const menuButtonClose = document.querySelector('.close-menu');
+
+// selecteer de overlay
+const menuOverlay = document.querySelector('.overlay');
+
+// selecteer het menu
+const menuNav = document.querySelector('.menu');
+
+// selecteer de heading en main content
+const paginaHeading = document.querySelector('.pagina-heading');
+const overzichtMainContent = document.querySelector('.overzicht-main-content');
+
+// geef een true of false terug als het scherm kleiner of groter is dan 1250px
+const screenSize = window.matchMedia("(width < 1250px)");
+
+// selecteer alle nav links
+const navLinks = document.querySelectorAll('nav a');
+console.log(navLinks);
+
+
+
+// add classes
+// breng de buttons op scherm
+menuButtonOpen.classList.remove('hidden');
+menuButtonClose.classList.remove('hidden');
+
+// schuif het menu weg van beeld
+menuNav.classList.add('menu-hamburger');
+
+// nieuwe positie heading + main content ( met hamburger menu)
+paginaHeading.classList.add('metHamburger');
+overzichtMainContent.classList.add('metHamburger');
+
+
+
+// run de functie updateMenu wanneer er een verandering in scherm plaats vindt
+screenSize.addEventListener('change', (e) => updateMenu(e));
+
+// als het scherm kleiner is dan 1250px dan krijgt het menu de attribute inert
+// is het scherm groter, dan wordt inert weg gehaald
+function updateMenu(e) {
+    const isMobile = e.matches;
+    console.log(isMobile)
+    if (isMobile) {
+        menuNav.setAttribute('inert', 'true');
+    }
+    else {
+        menuNav.removeAttribute('inert');
+    }
+}
+
+// loop over alle nav links en voeg een event listener toe
+// als een link geklikt wordt, gaat het menu dicht
+navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        // sluit het menu
+        closeMenu();
+    });
+});
+
+
+
+// functies
+// dit moet gebeuren als het menu open gaat
+function openMenu() {
+    // laat de screen reader weten dat het menu nu open is
+    menuButtonOpen.setAttribute('aria-expanded', 'true');
+
+    // haal inert weg als het menu open is
+    menuNav.removeAttribute('inert');
+
+    menuNav.classList.add('active');
+    console.log('ai wroko');
+};
+
+// dit moet gebeuren als het menu dicht gaat
+function closeMenu() {
+    // laat de screen reader weten dat het menu gesloten is
+    menuButtonOpen.setAttribute('aria-expanded', 'false');
+
+    // plaats inert terug als het menu dicht is
+    menuNav.setAttribute('inert', 'true');  
+
+    menuNav.classList.remove('active');
+};
+
+
+
+// roep de functies aan
+updateMenu(screenSize);
+
+// open en close het menu als de buttons geklikt worden
+// open menu
+menuButtonOpen.addEventListener('click', openMenu);
+// sluit menu
+menuButtonClose.addEventListener('click', closeMenu);
+
+// close het menu als er buyiten het menu geklikt wordt
+menuOverlay.addEventListener('click', closeMenu);

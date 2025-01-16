@@ -20,6 +20,11 @@ const menuNav = document.querySelector('.menu');
 const paginaHeading = document.querySelector('.pagina-heading');
 const overzichtMainContent = document.querySelector('.overzicht-main-content');
 
+// details pagina main content
+const detailTopContent = document.querySelector('.details-top-content');
+const detailSearchFilters = document.querySelector('.details-search-filters');
+const detailMainContent = document.querySelector('.details-pagina-kaartjes-container');
+
 // geef een true of false terug als het scherm kleiner of groter is dan 1250px
 const screenSize = window.matchMedia("(width < 1250px)");
 
@@ -37,9 +42,28 @@ menuButtonClose.classList.remove('hidden');
 // schuif het menu weg van beeld
 menuNav.classList.add('menu-hamburger');
 
-// nieuwe positie heading + main content ( met hamburger menu)
-paginaHeading.classList.add('metHamburger');
-overzichtMainContent.classList.add('metHamburger');
+// add de classes alleen als de 2 elementen bestaan op de pagina.
+if (paginaHeading && overzichtMainContent) {
+    // overzicht pagina nieuwe positie heading + main content ( met hamburger menu)
+    paginaHeading.classList.add('metHamburger');
+    overzichtMainContent.classList.add('metHamburger');
+}
+else {
+    console.log('elements not found');
+}
+
+// add de classes alleen als de elementen bestaan op de pagina.
+if (detailTopContent && detailSearchFilters && detailMainContent) {
+    // detail pagina nieuwe positie top content + search & filters + pagina kaartjes ( met hamburger menu)
+    paginaHeading.classList.add('metHamburger');
+    detailTopContent.classList.add('metHamburger');
+    detailSearchFilters.classList.add('metHamburger');
+    detailMainContent.classList.add('metHamburger');
+}
+else {
+    console.log('elements not found');
+}
+
 
 
 

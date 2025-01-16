@@ -67,6 +67,10 @@ main {
         z-index: 150;
     }
 
+    h3 a {
+        cursor: pointer;
+    }
+
     .menu-title {
         white-space: nowrap;
 
@@ -307,6 +311,15 @@ main {
 
 /* heading en main content positie als er een hamburger menu is */
 .overzicht-main-content.metHamburger, .pagina-heading.metHamburger {
+    @media (max-width: 1250px) {
+        top: 3em;
+        left: 1em;
+        margin-left: 0;
+    }
+}
+
+/* deze elementen helemaal link als er een hamburger menu is */
+.details-top-content.metHamburger, .details-search-filters.metHamburger, .details-pagina-kaartjes-container.metHamburger {
     @media (max-width: 1250px) {
         top: 3em;
         left: 1em;

@@ -7,59 +7,96 @@
     <title>AccessDash</title>
     <link rel="stylesheet" href="./styles/styles.css">
     <link rel="stylesheet" href="./styles/stylesheet.css">
+    <script src="./scripts/main.js" defer></script>
 </head>
 
 <body>
     <main>
+        <!-- skip link -->
+        <a href="#main-content-start" class="skip-link">Skip to main content</a>
+
+        <!-- hamburger menu button -->
+        <button class="open-menu hidden" aria-label="open menu button" aria-expanded="false" aria-controls="navbar">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="3" y1="12" x2="21" y2="12"></line>
+                <line x1="3" y1="6" x2="21" y2="6"></line>
+                <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+        </button>
+
         <!-- menu -->
-        <section class="menu">
-            <h2 class="font-nav-headings">
-                <svg width="24" height="29" viewBox="0 0 24 29" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd"
-                        d="M4.19918 28.4917C5.31928 29.3332 6.90876 29.1064 7.74937 27.9851L10.7108 24.0351C11.1215 23.4872 11.3433 23.1913 11.3704 23.1544C13.3301 20.488 13.9654 17.3728 13.0587 14.528C12.152 11.6832 9.83167 9.51196 6.69148 8.47438C6.64806 8.46004 6.13772 8.29679 5.17006 7.98726L4.93328 7.91153C4.41679 7.74632 3.8929 7.57245 3.36388 7.38964C2.04009 6.93218 0.596484 7.63559 0.139495 8.96075C-0.317494 10.2859 0.385187 11.731 1.70898 12.1885C2.27663 12.3846 2.83766 12.5708 3.38961 12.7474L3.4102 12.754C3.96789 12.9323 4.3868 13.0663 4.671 13.1573C4.81489 13.2033 4.92389 13.2382 4.99876 13.2622C5.03995 13.2754 5.06693 13.2841 5.08307 13.2893C5.10015 13.2948 5.10508 13.2963 5.10186 13.2953C6.938 13.902 7.88602 15.0007 8.2272 16.0711C8.56839 17.1416 8.43121 18.5869 7.28537 20.146C7.28684 20.144 7.28606 20.145 7.28193 20.1505C7.27615 20.1583 7.2638 20.1748 7.24186 20.2041C7.20939 20.2475 7.16262 20.3099 7.10104 20.3921C6.97913 20.5548 6.80039 20.7932 6.56218 21.1109L3.69313 24.9378C2.85251 26.0591 3.07908 27.6502 4.19918 28.4917Z"
-                        fill="url(#paint0_linear_1_43)" />
-                    <path
-                        d="M15.5361 3.625C15.5361 5.62703 13.9132 7.25 11.9111 7.25C9.9091 7.25 8.28613 5.62703 8.28613 3.625C8.28613 1.62297 9.9091 0 11.9111 0C13.9132 0 15.5361 1.62297 15.5361 3.625Z"
-                        fill="url(#paint1_linear_1_43)" />
-                    <g style="mix-blend-mode:multiply">
-                        <path fill-rule="evenodd" clip-rule="evenodd"
-                            d="M19.6235 28.4949C18.4994 29.334 16.9073 29.1039 16.0674 27.9809L13.1025 24.0165C12.6922 23.4679 12.4706 23.1717 12.4436 23.1348C10.4897 20.4698 9.85591 17.3609 10.7639 14.521C11.6719 11.681 13.9923 9.51483 17.1307 8.47495C17.1741 8.46057 17.6863 8.29625 18.6576 7.98463L18.8937 7.90886C19.4052 7.74478 19.9238 7.57218 20.4475 7.39076C21.7733 6.93151 23.2207 7.63296 23.6804 8.9575C24.1401 10.282 23.438 11.7281 22.1122 12.1873C21.5499 12.3821 20.9942 12.567 20.4474 12.7425C19.8778 12.9252 19.4508 13.0622 19.1623 13.1548C19.018 13.2011 18.9087 13.2362 18.8336 13.2603C18.7486 13.2877 18.724 13.2957 18.7302 13.2936C16.8927 13.9025 15.9455 14.9989 15.6044 16.0657C15.2633 17.1325 15.3989 18.5745 16.5429 20.1349C16.5412 20.1325 16.5426 20.1344 16.5489 20.1428C16.5554 20.1515 16.5672 20.1674 16.5864 20.1931C16.6188 20.2365 16.6655 20.299 16.727 20.3812C16.8499 20.5456 17.0307 20.7874 17.272 21.1101L20.138 24.9421C20.9779 26.0651 20.7476 27.6558 19.6235 28.4949Z"
-                            fill="url(#paint2_linear_1_43)" />
-                    </g>
-                    <defs>
-                        <linearGradient id="paint0_linear_1_43" x1="6.12576" y1="26.3964" x2="-2.9966" y2="22.3913"
-                            gradientUnits="userSpaceOnUse">
-                            <stop stop-color="#17ACFF" />
-                            <stop offset="1" stop-color="#4DD78A" />
-                        </linearGradient>
-                        <linearGradient id="paint1_linear_1_43" x1="11.9111" y1="0" x2="11.9111" y2="7.25"
-                            gradientUnits="userSpaceOnUse">
-                            <stop stop-color="#1EB2F1" />
-                            <stop offset="1" stop-color="#4ED88B" />
-                        </linearGradient>
-                        <linearGradient id="paint2_linear_1_43" x1="17.6992" y1="26.3964" x2="26.8066" y2="22.4074"
-                            gradientUnits="userSpaceOnUse">
-                            <stop stop-color="#17ACFF" />
-                            <stop offset="1" stop-color="#4DD78A" />
-                        </linearGradient>
-                    </defs>
-                </svg>
-                <span>AccessDash</span>
-            </h2>
-            <h3>
-                <button class="font-nav-headings">Dashboard</button>
-            </h3>
+        <nav class="menu" id="navbar">
+            <ul class="menu-title">
+                <li>
+                    <h2 class="font-nav-headings">
+                        <a href="#">
+                            <svg width="24" height="29" viewBox="0 0 24 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M4.19918 28.4917C5.31928 29.3332 6.90876 29.1064 7.74937 27.9851L10.7108 24.0351C11.1215 23.4872 11.3433 23.1913 11.3704 23.1544C13.3301 20.488 13.9654 17.3728 13.0587 14.528C12.152 11.6832 9.83167 9.51196 6.69148 8.47438C6.64806 8.46004 6.13772 8.29679 5.17006 7.98726L4.93328 7.91153C4.41679 7.74632 3.8929 7.57245 3.36388 7.38964C2.04009 6.93218 0.596484 7.63559 0.139495 8.96075C-0.317494 10.2859 0.385187 11.731 1.70898 12.1885C2.27663 12.3846 2.83766 12.5708 3.38961 12.7474L3.4102 12.754C3.96789 12.9323 4.3868 13.0663 4.671 13.1573C4.81489 13.2033 4.92389 13.2382 4.99876 13.2622C5.03995 13.2754 5.06693 13.2841 5.08307 13.2893C5.10015 13.2948 5.10508 13.2963 5.10186 13.2953C6.938 13.902 7.88602 15.0007 8.2272 16.0711C8.56839 17.1416 8.43121 18.5869 7.28537 20.146C7.28684 20.144 7.28606 20.145 7.28193 20.1505C7.27615 20.1583 7.2638 20.1748 7.24186 20.2041C7.20939 20.2475 7.16262 20.3099 7.10104 20.3921C6.97913 20.5548 6.80039 20.7932 6.56218 21.1109L3.69313 24.9378C2.85251 26.0591 3.07908 27.6502 4.19918 28.4917Z"
+                                    fill="url(#paint0_linear_1_43)" />
+                                <path
+                                    d="M15.5361 3.625C15.5361 5.62703 13.9132 7.25 11.9111 7.25C9.9091 7.25 8.28613 5.62703 8.28613 3.625C8.28613 1.62297 9.9091 0 11.9111 0C13.9132 0 15.5361 1.62297 15.5361 3.625Z"
+                                    fill="url(#paint1_linear_1_43)" />
+                                <g style="mix-blend-mode:multiply">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M19.6235 28.4949C18.4994 29.334 16.9073 29.1039 16.0674 27.9809L13.1025 24.0165C12.6922 23.4679 12.4706 23.1717 12.4436 23.1348C10.4897 20.4698 9.85591 17.3609 10.7639 14.521C11.6719 11.681 13.9923 9.51483 17.1307 8.47495C17.1741 8.46057 17.6863 8.29625 18.6576 7.98463L18.8937 7.90886C19.4052 7.74478 19.9238 7.57218 20.4475 7.39076C21.7733 6.93151 23.2207 7.63296 23.6804 8.9575C24.1401 10.282 23.438 11.7281 22.1122 12.1873C21.5499 12.3821 20.9942 12.567 20.4474 12.7425C19.8778 12.9252 19.4508 13.0622 19.1623 13.1548C19.018 13.2011 18.9087 13.2362 18.8336 13.2603C18.7486 13.2877 18.724 13.2957 18.7302 13.2936C16.8927 13.9025 15.9455 14.9989 15.6044 16.0657C15.2633 17.1325 15.3989 18.5745 16.5429 20.1349C16.5412 20.1325 16.5426 20.1344 16.5489 20.1428C16.5554 20.1515 16.5672 20.1674 16.5864 20.1931C16.6188 20.2365 16.6655 20.299 16.727 20.3812C16.8499 20.5456 17.0307 20.7874 17.272 21.1101L20.138 24.9421C20.9779 26.0651 20.7476 27.6558 19.6235 28.4949Z"
+                                        fill="url(#paint2_linear_1_43)" />
+                                </g>
+                                <defs>
+                                    <linearGradient id="paint0_linear_1_43" x1="6.12576" y1="26.3964" x2="-2.9966" y2="22.3913"
+                                        gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#17ACFF" />
+                                        <stop offset="1" stop-color="#4DD78A" />
+                                    </linearGradient>
+                                    <linearGradient id="paint1_linear_1_43" x1="11.9111" y1="0" x2="11.9111" y2="7.25"
+                                        gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#1EB2F1" />
+                                        <stop offset="1" stop-color="#4ED88B" />
+                                    </linearGradient>
+                                    <linearGradient id="paint2_linear_1_43" x1="17.6992" y1="26.3964" x2="26.8066" y2="22.4074"
+                                        gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#17ACFF" />
+                                        <stop offset="1" stop-color="#4DD78A" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                            <span>AccessDash</span>
+                        </a>
+                    </h2>
+                </li>
+                <!-- close button -->
+                <li>
+                    <button class="close-menu hidden" aria-label="close menu button">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="18" y1="6" x2="6" y2="18"></line>
+                            <line x1="6" y1="6" x2="18" y2="18"></line>
+                        </svg>
+                    </button>
+                </li>
+            </ul>
+
+            <!-- dashboard -->
             <ul>
+                <li>
+                    <h3>
+                        <a class="font-nav-headings">Dashboard</a>
+                    </h3>
+                </li>
                 <li><a href="#">Dashboard</a></li>
                 <li><a href="#">Info</a></li>
                 <li><a href="#">Voortgang</a></li>
                 <li><a href="#">Scan</a></li>
             </ul>
 
-            <h3>
-                <button class="font-nav-headings">Nieuwekijk</button>
-            </h3>
+            <!-- nieuwekijk -->
             <ul>
+                <li>
+                    <h3>
+                        <a class="font-nav-headings">Nieuwekijk</a>
+                    </h3>
+                </li>
                 <li><a href="#">/home</a></li>
                 <li><a href="#">/over-ons</a></li>
                 <li><a href="#">/contact</a></li>
@@ -67,14 +104,19 @@
                 <li><a href="#">/blog</a></li>
                 <li><a href="#">/blog-detail</a></li>
             </ul>
-            <p class="links">
-                <a class="font-nav-links" href="#">instellingen</a>
-                <a class="font-nav-links" href="#">account</a>
-            </p>
-        </section>
+
+            <!-- links -->
+            <ul class="links">
+                <li><a class="font-nav-links" href="#">instellingen</a></li>
+                <li><a class="font-nav-links" href="#">account</a></li>
+            </ul>
+        </nav>
+
+        <!-- deze overlay komt over de pagina als het hamburger menu open is. als hier geklikt wordt dan gaat het hamburger menu dicht-->
+        <div class="overlay" aria-hidden="true"></div>
 
         <!-- pagina heading -->
-        <section class="pagina-heading">
+        <section class="pagina-heading" id="main-content-start">
             <h1 class="font-primary">Dashboard</h1>
             <h2 class="font-title">Nieuwekijk</h2>
         </section>

@@ -126,12 +126,13 @@ main {
         padding: 1em;
         height: 100dvh;
         z-index: 200;
-        
-        /* animatie */
-        transition: left 0.3s ease-out;
 
         background-color: var(--background-secondary);
         border-right: 1px solid black;
+
+        /* animatie */
+        /* dit gebeurt als het menu dicht gemaakt wordt */
+        transition: left 750ms ease-in-out;
 
         .menu-title {
             display: flex;
@@ -155,19 +156,92 @@ main {
 
 .menu-hamburger.active {
     left: 0;
+
     /* animatie */
-    transition: left 0.3s ease-out;
+    /* dit gebeurt na de overlay animatie */
+    transition: left 1s ease-in-out;
+}
+
+/* li 1 voor 1 in het menu */
+.li-animation {
+    /* dit gebeurt nadat het menu background op beeld is */
+    animation: li-slide 1.3s ease-in;
+}
+
+/* delay op elke li in het menu */
+/* elke li is 50ms langzamer dan de vorige */
+.menu-hamburger {
+    .menu-title li:nth-child(1), .menu-title li:nth-child(2) {
+        animation-delay: 0ms;
+    }
+
+    /* dashboard links */
+    .dashboard-links li:nth-child(1) {
+        animation-delay: 25ms;
+    }
+    .dashboard-links li:nth-child(2) {
+        animation-delay: 50ms;
+    }
+    .dashboard-links li:nth-child(3) {
+        animation-delay: 75ms;
+    }
+    .dashboard-links li:nth-child(4) {
+        animation-delay: 100ms;
+    }
+    .dashboard-links li:nth-child(5) {
+        animation-delay: 125ms;
+    }
+    .dashboard-links li:nth-child(6) {
+        animation-delay: 150ms;
+    }
+
+    /* nieuwekijk links */
+    .nieuwekijk-links li:nth-child(1) {
+        animation-delay: 175ms;
+    }
+    .nieuwekijk-links li:nth-child(2) {
+        animation-delay: 200ms;
+    }
+    .nieuwekijk-links li:nth-child(3) {
+        animation-delay: 225ms;
+    }
+    .nieuwekijk-links li:nth-child(4) {
+        animation-delay: 250ms;
+    }
+    .nieuwekijk-links li:nth-child(5) {
+        animation-delay: 275ms;
+    }
+    .nieuwekijk-links li:nth-child(6) {
+        animation-delay: 300ms;
+    }
+    .nieuwekijk-links li:nth-child(7) {
+        animation-delay: 325ms;
+    }
+
+    /* links (2 links onderaan) */
+    .links li:nth-child(1) {
+        animation-delay: 350ms;
+    }
+    .links li:nth-child(2) {
+        animation-delay: 375ms;
+    }
 }
 
 /* div over de hele pagina */
 .overlay {
     display: none;
-    background-color: rgba(0, 0, 0, 0.5);
     position: fixed;
     /* top, right, bottom and left = 0 */
     inset: 0;
+
+    background-color: rgba(0, 0, 0, 0.5);
+
     /* achter het hamburger menu */
     z-index: 199;
+
+    /* animatie */
+    /* dit gebeurt als eerst */
+    animation: overlay-transition 500ms ease-in;
 }
 
 /* als er een element is met de class menu-hamburger & de class active  */
@@ -311,15 +385,6 @@ main {
 
 /* heading en main content positie als er een hamburger menu is */
 .overzicht-main-content.metHamburger, .pagina-heading.metHamburger {
-    @media (max-width: 1250px) {
-        top: 3em;
-        left: 1em;
-        margin-left: 0;
-    }
-}
-
-/* deze elementen helemaal link als er een hamburger menu is */
-.details-top-content.metHamburger, .details-search-filters.metHamburger, .details-pagina-kaartjes-container.metHamburger {
     @media (max-width: 1250px) {
         top: 3em;
         left: 1em;
@@ -776,10 +841,39 @@ main {
     }
 }
 
+/* deze elementen helemaal link als er een hamburger menu is */
+.details-top-content.metHamburger, .details-search-filters.metHamburger, .details-pagina-kaartjes-container.metHamburger {
+    @media (max-width: 1250px) {
+        top: 3em;
+        left: 1em;
+        margin-left: 0;
+    }
+}
 
+/* keyframe animations */
+/* opacity die over de pagina komt als het menu open gemaakt wordt */
+@keyframes overlay-transition {
+    from {
+        background-color: rgba(0, 0, 0, 0);
+    }
 
+    to {
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+}
 
+/* li delay animation */
+@keyframes li-slide {
+    from {
+        opacity: 0.5;
+        transform: translateX(-100%);
+    }
 
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
 
 
 

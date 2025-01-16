@@ -30,7 +30,10 @@ const screenSize = window.matchMedia("(width < 1250px)");
 
 // selecteer alle nav links
 const navLinks = document.querySelectorAll('nav a');
-console.log(navLinks);
+
+
+// selecteer de li in het menu
+const liAnimation = document.querySelectorAll('.menu li');
 
 
 
@@ -104,7 +107,12 @@ function openMenu() {
     menuNav.removeAttribute('inert');
 
     menuNav.classList.add('active');
-    console.log('ai wroko');
+
+    // animation
+    // li 1 voor 1 op scherm
+    liAnimation.forEach(li => {
+        li.classList.add('li-animation');
+    });
 };
 
 // dit moet gebeuren als het menu dicht gaat
@@ -116,6 +124,11 @@ function closeMenu() {
     menuNav.setAttribute('inert', 'true');  
 
     menuNav.classList.remove('active');
+
+    // animation
+    liAnimation.forEach(li => {
+        li.classList.remove('li-animation');
+    });
 };
 
 

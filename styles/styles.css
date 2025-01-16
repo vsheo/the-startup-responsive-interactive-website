@@ -115,20 +115,26 @@ main {
     }
 }
 
+/* hover scale */
+.menu li:hover {
+    scale: 1.1;
+    transform-origin: left;
+    text-decoration: underline;
+}
+
 /* menu layout for hamburgermenu */
 .menu-hamburger {
     /* hamburger menu alleen voor kleine schermen */
     @media (max-width: 1250px) {
         position: fixed;
         top: 0;
-        /* off screen kinker kant */
+        /* off screen linker kant */
         left: -100%;
         padding: 1em;
         height: 100dvh;
         z-index: 200;
 
         background-color: var(--background-secondary);
-        border-right: 1px solid black;
 
         /* animatie */
         /* dit gebeurt als het menu dicht gemaakt wordt */

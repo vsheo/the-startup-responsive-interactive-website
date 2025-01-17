@@ -211,13 +211,13 @@ label:hover {
 
     /* animatie */
     /* dit gebeurt na de overlay animatie */
-    transition: left 1s ease-in-out;
+    transition: left 0.8s ease-in-out;
 }
 
 /* li 1 voor 1 in het menu */
 .li-animation {
     /* dit gebeurt nadat het menu background op beeld is */
-    animation: li-slide 1.3s ease-in;
+    animation: li-slide 1s ease-in;
 }
 
 /* delay op elke li in het menu */

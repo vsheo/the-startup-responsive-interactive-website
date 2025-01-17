@@ -6,6 +6,9 @@
 // zodat je niet met tab in het menu kan als het menu gesloten is.
 // source: https://www.youtube.com/watch?v=m7YDWNz65iI
 
+// selecteer de checkbox hamburger menu die zonder JS werkt
+const hamburgerMenuCheckbox = document.querySelector('.checkbox-label');
+
 // selecteer de buttons om het menu open en dicht te maken
 const menuButtonOpen = document.querySelector('.open-menu');
 const menuButtonClose = document.querySelector('.close-menu');
@@ -38,6 +41,9 @@ const liAnimation = document.querySelectorAll('.menu li');
 
 
 // add classes
+// zet hamburger menu checkbox op display none
+hamburgerMenuCheckbox.classList.add('hidden');
+
 // breng de buttons op scherm
 menuButtonOpen.classList.remove('hidden');
 menuButtonClose.classList.remove('hidden');

@@ -16,6 +16,18 @@
         <a href="#main-content-start" class="skip-link">Skip to main content</a>
 
         <!-- hamburger menu button -->
+        <!-- hamburger menu die werkt met een checkbox -->
+        <input id='menu-toggle-checkbox' type='checkbox'>
+        <label class="checkbox-label" for='menu-toggle-checkbox'>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+        </label>
+
+        <!-- hamburger menu dat werkt met JS -->
         <button class="open-menu hidden" aria-label="open menu button" aria-expanded="false" aria-controls="navbar">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                 stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -26,7 +38,7 @@
         </button>
 
         <!-- menu -->
-        <nav class="menu" id="navbar">
+        <nav class="menu menu-hamburger" id="navbar">
             <ul class="menu-title">
                 <li>
                     <h2 class="font-nav-headings">

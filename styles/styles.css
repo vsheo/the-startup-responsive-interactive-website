@@ -49,6 +49,37 @@ main {
     }
 }
 
+#menu-toggle-checkbox {
+    position: absolute;
+    right: 100vw;
+}
+
+label {
+    cursor: pointer;
+    width: min-content;
+    transition: 1s ease-in-out;
+}
+
+[type="checkbox"]:checked {
+    & ~ .menu {
+        left: 0;
+
+        /* animatie */
+        /* dit gebeurt na de overlay animatie */
+        transition: left 1s ease-in-out;
+    }
+}
+
+[type="checkbox"]:checked + label {
+    margin-left: 12em;
+    rotate: 90deg;
+    transition: 1s ease-in-out;
+    transition-delay: 120ms;
+}
+
+
+
+
 /* menu zonder js */
 .menu {
     display: flex;
@@ -114,6 +145,8 @@ main {
         }
     }
 }
+
+
 
 /* hover scale */
 .menu li:hover {
@@ -880,7 +913,3 @@ main {
         transform: translateX(0);
     }
 }
-
-
-
-

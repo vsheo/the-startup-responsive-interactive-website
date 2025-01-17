@@ -617,6 +617,7 @@ label:hover {
                 align-items: center;
                 justify-content: center;
                 margin-bottom: 1em;
+                width: 25em;
 
                 svg {
                     margin-right: 1em;

@@ -91,6 +91,7 @@ label:hover {
     margin-left: 12em;
     rotate: 90deg;
     transition: 1s ease-in-out;
+    transform-origin: left;
     transition-delay: 120ms;
 }
 
@@ -438,6 +439,19 @@ label:hover {
 }
 
 /* heading en main content positie als er een hamburger menu is */
+.overzicht-main-content.metHamburger {
+    @media (min-width: 1020px) and (max-width: 1250px) {
+        display: grid;
+        grid-template-columns: min-content min-content;
+        grid-template-rows: min-content min-content;
+        grid-gap: 1em;
+
+        top: 3em;
+        left: 1em;
+        margin-left: 0;
+    }
+}
+
 .overzicht-main-content.metHamburger, .pagina-heading.metHamburger {
     @media (max-width: 1250px) {
         top: 3em;

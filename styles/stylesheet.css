@@ -64,6 +64,26 @@ body {
     /* formulieren */
     --icon-primary: #5D666A;
 
+    --button-radius-s: 59px;
+    --button-radius-m: 69px;
+    --button-transition: 400ms;
+
+    --button-height-s: 32px;
+    --button-height-m: 50px;
+
+    --button-width-s: 142px;
+    --button-width-m: 185px;
+    --button-width-l: 229px;
+
+    --button-hover-scale: 1.05;
+    --button-click-scale: 0.9;
+
+    --button-shadow: 5px 5px 9px gray;
+
+    /* animation */
+    --animation-time: 1.3s;
+    --duration: 100ms;
+
     /* global styling */
     background-color: var(--background-primary);
     color: var(--text-primary);
@@ -166,83 +186,83 @@ a {
     color: var(--highlight);
 }
 
+/* button voor nfo */
 .button-nfo {
     background-color: var(--nfo-button-secondary);
     border-color: var(--nfo-primary);
     color: var(--text-primary);
-    transition: 400ms;
+    transition: var(--button-transition);
     border: 1px solid var(--nfo-primary);
-    border-radius: 59px;
-    height: 50px;
-    /* width: 229px; */
-    min-width: 185px;
-    max-width: 229px;
+    border-radius: var(--button-radius-s);
+    height: var(--button-height-m);
+    min-width: var(--button-width-m);
+    max-width: var(--button-width-l);
 }
 
 .button-nfo:hover {
-    scale: 1.05;
-    box-shadow: 5px 5px 9px gray;
-    transition: 400ms;
+    scale: var(--button-hover-scale);
+    box-shadow: var(--button-shadow);
+    transition: var(--button-transition);
 }
 
 .button-nfo:active {
-    animation: is-clicked 1.3s ease-in;
-    animation-duration: 100ms;
+    animation: is-clicked var(--animation-time) ease-in;
+    animation-duration: var(--duration);
 }
 
 /* button voor ontoegankelijk */
 .button-inaccessible {
     background-color: var(--inaccessible-secondary);
     color: var(--inaccessible-primary);
-    transition: 400ms;
+    transition: var(--button-transition);
+    border-radius: var(--button-radius-m);
+    height: var(--button-height-s);
+    width: var(--button-width-s);
     border: none;
-    border-radius: 69px;
-    height: 32px;
-    width: 142px;
 }
 
 .button-inaccessible:hover {
-    scale: 1.05;
-    box-shadow: 5px 5px 9px gray;
-    transition: 400ms;
+    scale: var(--button-hover-scale);
+    box-shadow: var(--button-shadow);
+    transition: var(--button-transition);
 }
 
 .button-inaccessible:active {
-    animation: is-clicked 1.3s ease-in;
-    animation-duration: 100ms;
+    animation: is-clicked var(--animation-time) ease-in;
+    animation-duration: var(--duration);
 }
 
 /* button voor toegankelijk */
 .button-accessible {
     background-color: var(--accessible-secondary);
     color: var(--accessible-primary);
-    transition: 400ms;
+    transition: var(--button-transition);
+    border-radius: var(--button-radius-m);
+    height: var(--button-height-s);
+    width: var(--button-width-s);
     border: none;
-    border-radius: 69px;
-    height: 32px;
-    width: 142px;
 }
 
 .button-accessible:hover {
-    scale: 1.05;
-    box-shadow: 5px 5px 9px gray;
-    transition: 400ms;
+    scale: var(--button-hover-scale);
+    box-shadow: var(--button-shadow);
+    transition: var(--button-transition);
 }
 
 .button-accessible:active {
-    animation: is-clicked 1.3s ease-in;
-    animation-duration: 100ms;
+    animation: is-clicked var(--animation-time) ease-in;
+    animation-duration: var(--duration);
 }
 
 
 /* === KEYFRAMES VOOR BUTTONS === */
 @keyframes is-clicked {
     from {
-        transform: scale(1.05);
+        transform: scale(var(--button-hover-scale));
     }
 
     to {
-        transform: scale(0.9);
+        transform: scale(var(--button-click-scale));
     }
 }
 

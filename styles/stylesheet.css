@@ -185,6 +185,11 @@ a {
     transition: 400ms;
 }
 
+.button-nfo:active {
+    animation: is-clicked 1.3s ease-in;
+    animation-duration: 100ms;
+}
+
 /* button voor ontoegankelijk */
 .button-inaccessible {
     background-color: var(--inaccessible-secondary);
@@ -200,6 +205,11 @@ a {
     scale: 1.05;
     box-shadow: 5px 5px 9px gray;
     transition: 400ms;
+}
+
+.button-inaccessible:active {
+    animation: is-clicked 1.3s ease-in;
+    animation-duration: 100ms;
 }
 
 /* button voor toegankelijk */
@@ -218,6 +228,24 @@ a {
     box-shadow: 5px 5px 9px gray;
     transition: 400ms;
 }
+
+.button-accessible:active {
+    animation: is-clicked 1.3s ease-in;
+    animation-duration: 100ms;
+}
+
+
+/* === KEYFRAMES VOOR BUTTONS === */
+@keyframes is-clicked {
+    from {
+        transform: scale(1.05);
+    }
+
+    to {
+        transform: scale(0.9);
+    }
+}
+
 
 
 /* === METER BAR === */

@@ -37,6 +37,13 @@ main {
     border: none;
     margin-right: auto;
     background-color: inherit;
+
+    cursor: pointer;
+}
+
+.open-menu:hover {
+    scale: 1.2;
+    transform-origin: left;
 }
 
 .close-menu {
@@ -44,11 +51,14 @@ main {
     margin-right: auto;
     background-color: inherit;
 
+    cursor: pointer;
+
     @media (min-width: 1250px) {
         display: none;
     }
 }
 
+/* styling voor open en close menu button als JS niet inlaad */
 #menu-toggle-checkbox {
     position: absolute;
     right: 100vw;
@@ -58,6 +68,13 @@ label {
     cursor: pointer;
     width: min-content;
     transition: 1s ease-in-out;
+
+    cursor: pointer;
+}
+
+label:hover {
+    scale: 1.2;
+    transform-origin: left;
 }
 
 [type="checkbox"]:checked {
@@ -142,8 +159,6 @@ label {
         }
     }
 }
-
-
 
 /* hover scale */
 .menu li:hover {

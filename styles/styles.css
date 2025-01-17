@@ -77,9 +77,6 @@ label {
     transition-delay: 120ms;
 }
 
-
-
-
 /* menu zonder js */
 .menu {
     display: flex;
@@ -292,6 +289,7 @@ label {
 
 /* overzicht & details pagina heading */
 .pagina-heading {
+    margin-top: 1em;
     margin-right: auto;
 
     @media (min-width: 750px) {

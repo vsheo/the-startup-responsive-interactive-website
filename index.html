@@ -14,7 +14,7 @@
         <a href="#main-content-start" class="skip-link">Skip to main content</a>
 
         <!-- hamburger menu button -->
-        <!-- hamburger menu die werkt met een checkbox -->
+        <!-- hamburger menu icon die werkt met een checkbox -->
         <input id='menu-toggle-checkbox' type='checkbox'>
         <label class="checkbox-label" for='menu-toggle-checkbox'>
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -25,7 +25,7 @@
         </svg>
         </label>
 
-        <!-- hamburger menu dat werkt met JS -->
+        <!-- hamburger menu icon dat werkt met JS -->
         <button class="open-menu hidden" aria-label="open menu button" aria-expanded="false" aria-controls="navbar">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                 stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -91,7 +91,14 @@
             <ul class="dashboard-links">
                 <li>
                     <h3>
-                        <a class="font-nav-headings" href="./index.html">Dashboard</a>
+                        <a class="font-nav-headings" href="./index.html">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M2.4231 15.0834C2.00751 15.0834 1.65254 14.9362 1.35821 14.6419C1.06386 14.3475 0.916687 13.9926 0.916687 13.577V2.42317C0.916687 2.00757 1.06386 1.6526 1.35821 1.35827C1.65254 1.06392 2.00751 0.916748 2.4231 0.916748H13.5769C13.9925 0.916748 14.3475 1.06392 14.6418 1.35827C14.9361 1.6526 15.0833 2.00757 15.0833 2.42317V13.577C15.0833 13.9926 14.9361 14.3475 14.6418 14.6419C14.3475 14.9362 13.9925 15.0834 13.5769 15.0834H2.4231ZM6.54169 13.8334V8.62504H2.16667V13.577C2.16667 13.6517 2.19071 13.7132 2.23879 13.7613C2.28687 13.8094 2.34831 13.8334 2.4231 13.8334H6.54169ZM7.79165 13.8334H13.5769C13.6517 13.8334 13.7131 13.8094 13.7612 13.7613C13.8093 13.7132 13.8333 13.6517 13.8333 13.577V8.62504H7.79165V13.8334ZM2.16667 7.37508H13.8333V2.42317C13.8333 2.34837 13.8093 2.28694 13.7612 2.23885C13.7131 2.19077 13.6517 2.16673 13.5769 2.16673H2.4231C2.34831 2.16673 2.28687 2.19077 2.23879 2.23885C2.19071 2.28694 2.16667 2.34837 2.16667 2.42317V7.37508Z"
+                                    fill="#0275FF" />
+                            </svg>
+                            <span>Dashboard</span>
+                        </a>
                     </h3>
                 </li>
                 <li><a href="./index.html">Dashboard</a></li>
@@ -104,7 +111,14 @@
             <ul class="nieuwekijk-links">
                 <li>
                     <h3>
-                        <a class="font-nav-headings" href="./details.html">Nieuwekijk</a>
+                        <a class="font-nav-headings" href="./details.html">
+                            <svg width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M6 1.92773C3.08702 2.95733 1 5.73542 1 9.00098C1 13.1431 4.35787 16.501 8.5 16.501C12.6422 16.501 16 13.1431 16 9.00098C16 5.73542 13.913 2.95733 11 1.92773"
+                                    stroke="#0275FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            <span>Nieuwekijk</span>
+                        </a>
                     </h3>
                 </li>
                 <li><a href="./details.html">/home</a></li>
@@ -138,8 +152,8 @@
             <article>
                 <img src="./assets/images/new_future_lab_logo.png" alt="new future lab website logo">
                 <h3 class="font-details-title">new Future Lab</h3>
-                <a href="#">newfuturelab.nl</a>
-                <button class="button-inaccessible">ontoegankelijk</button>
+                <a class="site-link" href="#">newfuturelab.nl</a>
+                <a class="button button-inaccessible" href="#">ontoegankelijk</a>
                 <meter class="meter-circle" value="57" min="0" max="100"></meter>
             </article>
 
@@ -147,18 +161,17 @@
             <article>
                 <img src="./assets/images/shot_of_culture_logo.png" alt="shot of culture website logo">
                 <h3 class="font-details-title">Shot of Culture</h3>
-                <a href="#">shotofculture.nl</a>
-                <button class="button-nfo">
+                <a class="site-link" href="#">shotofculture.nl</a>
+                <a class="button button-nfo" href="#">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" width="23" height="23" fill="none">
                         <!-- Circle Border -->
                         <circle cx="20" cy="20" r="18" stroke="#F4A328" stroke-width="4" fill="#FFF7E8" />
-                      
                         <!-- Exclamation Mark -->
                         <rect x="18.5" y="10" width="3" height="15" fill="#F4A328" />
                         <circle cx="20" cy="30" r="2" fill="#F4A328" />
-                      </svg>
+                    </svg>
                     nieuwe fouten ontdekt
-                </button>
+                </a>
                 <meter class="meter-circle" value="57" min="0" max="100"></meter>
             </article>
 
@@ -166,8 +179,8 @@
             <article>
                 <img src="./assets/images/nieuwekijk_logo.png" alt="nieuwekijk website logo">
                 <h3 class="font-details-title">Nieuwekijk</h3>
-                <a href="#">nieuwekijk.nl</a>
-                <button class="button-nfo">
+                <a class="site-link" href="./details.html">nieuwekijk.nl</a>
+                <a class="button button-nfo" href="./details.html">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" width="23" height="23" fill="none">
                         <!-- Circle Border -->
                         <circle cx="20" cy="20" r="18" stroke="#F4A328" stroke-width="4" fill="#FFF7E8" />
@@ -177,7 +190,7 @@
                         <circle cx="20" cy="30" r="2" fill="#F4A328" />
                       </svg>
                     nieuwe fouten ontdekt
-                </button>
+                </a>
                 <meter class="meter-circle" value="100" min="0" max="100"></meter>
 
             </article>
@@ -186,8 +199,8 @@
             <article>
                 <img src="./assets/images/the_bin_logo.png" alt="the bin logo">
                 <h3 class="font-details-title">The Bin</h3>
-                <a href="#">thebin.nl</a>
-                <button class="button-accessible">toegankelijk</button>
+                <a class="site-link" href="#">thebin.nl</a>
+                <a class="button button-accessible" href="#">toegankelijk</a>
                 <meter class="meter-circle" value="100" min="0" max="100"></meter>
             </article>
         </div>

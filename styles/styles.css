@@ -400,15 +400,17 @@ label:hover {
             margin-bottom: 0.9em;
         }
 
-        a {
+        .site-link {
             grid-area: title;
 
             /* link onder de h2 */
             align-self: end;
         }
 
-        button {
+        .button {
             grid-area: button;
+
+            cursor: pointer;
 
             /* center svg en tekst */
             display: flex;

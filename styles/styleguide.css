@@ -1,0 +1,115 @@
+* {
+    background-color: white;
+    color: black;
+}
+
+body {
+    margin-top: 2em;
+    margin-left: 2em;
+    margin-right: 2em;
+
+    .title, .sub-title {
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }
+
+    section {
+        padding-bottom: 2em;
+        border-bottom: 3px solid black;
+    }
+}
+
+
+.kleur-kaart {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 2em;
+
+    div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 1em;
+        height: 5em;
+        width: 5em;
+        border-radius: 50%;
+        border: 1px solid black;
+    }
+}
+
+/* background-primary */
+.kleur-kaart:nth-of-type(1) .color-code {
+    background-color: var(--background-primary);
+}
+/* background-secondary */
+.kleur-kaart:nth-of-type(2) .color-code {
+    background-color: var(--background-secondary);
+}
+/* highlight */
+.kleur-kaart:nth-of-type(3) .color-code {
+    background-color: var(--highlight);
+}
+/* filter-highlight */
+.kleur-kaart:nth-of-type(4) .color-code {
+    background-color: var(--filter-highlight);
+}
+/* text-primary */
+.kleur-kaart:nth-of-type(5) .color-code {
+    background-color: var(--text-primary);
+}
+/* text-light */
+.kleur-kaart:nth-of-type(6) .color-code {
+    background-color: var(--text-light);
+}
+/* accessible-primary */
+.kleur-kaart:nth-of-type(7) .color-code {
+    background-color: var(--accessible-primary);
+}
+/* accessible-secondary */
+.kleur-kaart:nth-of-type(8) .color-code {
+    background-color: var(--accessible-secondary);
+}
+/* nfo-primary */
+.kleur-kaart:nth-of-type(9) .color-code {
+    background-color: var(--nfo-primary);
+}
+/* nfo-secondary */
+.kleur-kaart:nth-of-type(10) .color-code {
+    background-color: var(--nfo-secondary);
+}
+/* inaccessible-primary */
+.kleur-kaart:nth-of-type(11) .color-code {
+    background-color: var(--inaccessible-primary);
+}
+/* inaccessible-secondary */
+.kleur-kaart:nth-of-type(12) .color-code {
+    background-color: var(--inaccessible-secondary);
+}
+
+
+.font-kaart {
+    width: 30em;
+    margin-top: 1em;
+    margin-bottom: 2em;
+
+    display: flex;
+    flex-direction: column;
+
+    span {
+        margin-top: 0.5em;
+    }
+}
+
+
+.formulier-kaart {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    width: 30em;
+}
+
+.formulier-kaart:nth-of-type(4) button, .formulier-kaart:nth-of-type(5) button {
+    width: 5em;
+}

@@ -59,7 +59,7 @@ main {
 }
 
 /* styling voor open en close menu button als JS niet inlaad */
-#menu-toggle-checkbox {
+#menu-checkbox-toggle {
     position: absolute;
     right: 100vw;
 }

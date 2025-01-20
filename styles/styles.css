@@ -116,6 +116,8 @@ label {
 
     h3 a {
         cursor: pointer;
+        border: none;
+        background-color: inherit;
     }
 
     .menu-title {
@@ -134,13 +136,6 @@ label {
 
         svg {
             margin-right: 0.5em;
-        }
-    }
-
-    h3 {
-        a {
-            border: none;
-            background-color: inherit;
         }
     }
 
@@ -314,7 +309,7 @@ label {
     }
 
     h1 {
-        margin-bottom: 0.2em;
+        margin-bottom: 1em;
     }
 
     h2 {
@@ -769,25 +764,25 @@ label {
                     height: 2em;
                     width: 9em;
                 }
-            }
 
-            li:last-child {
-                button {
-                    height: 2.3em;
-                    width: 12.6em;
-                    
-                    @media (max-width: 520px) {
-                        width: 9em;
+                &:last-child {
+                    button {
+                        height: 2.3em;
+                        width: 12.6em;
+                        
+                        @media (max-width: 520px) {
+                            width: 9em;
+                        }
+    
+                        svg {
+                            fill: var(--text-light);
+                        }
                     }
-
-                    svg {
-                        fill: var(--text-light);
-                    }
-                }
-
-                button:hover {
-                    svg {
-                        fill: var(--highlight);
+    
+                    button:hover {
+                        svg {
+                            fill: var(--highlight);
+                        }
                     }
                 }
             }

@@ -316,7 +316,6 @@ a {
     counter-reset: val calc(var(--y)*var(--x));
     display: grid;
     place-content: center;
-    font-family: system-ui, sans-serif;
     font-weight: 900;
     font-size: 1.8rem;
 }

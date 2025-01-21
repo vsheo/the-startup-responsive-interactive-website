@@ -47,7 +47,7 @@ https://github.com/user-attachments/assets/cf2c50b9-83ed-4683-8ae6-eff5d2585301
 https://github.com/user-attachments/assets/bc510f99-884f-4ce6-89ac-73a4bd9c74f6
 
 <!-- ----------------------------------------------------------------------------------------------------------------------------------------- -->
-#### Menu interactie op grote schermen <br/>
+#### Menu interactie op grote schermen<br/>
 Op grote schermen is het menu altijd open.
 De linkjes in het menu worden ook groter en krijgen een underline als je eroverheen gaat. Dit laat zien dat je er iets mee kunt doen.<br/>
 De namen van de linkjes geven de gebruiker een idee naar welke pagina hij toe gaat.

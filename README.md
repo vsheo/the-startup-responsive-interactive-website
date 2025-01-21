@@ -7,14 +7,14 @@ De instructies voor deze opdracht staan in: [INSTRUCTIONS.md](https://github.com
 
 ## Inhoudsopgave
 [Beschrijving](#Beschrijving)
-[ - interacties](#interacties)
+[interacties](#interacties)
 
 [Kenmerken](#Kenmerken)
 [Styleguide](#Styleguide)
-[Code conventies](#code conventies)
-[Ademruimte en inspringen](#Ademruimte en inspringen)
-[Volgorde en nesten van CSS selectors](#Volgorde en nesten van CSS selectors)
-[Nesten van media queries](#Nesten van media queries)
+[Code conventies](#code-conventies)
+[Ademruimte en inspringen](#Ademruimte-en-inspringen)
+[Volgorde en nesten van CSS selectors](#Volgorde-en-nesten-van-CSS-selectors)
+[Nesten van media queries](#Nesten-van-media-queries)
 
 ## Beschrijving
 <!-- In de Beschrijving staat hoe je project er uit ziet, hoe het werkt en wat je er mee kan. -->

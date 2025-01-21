@@ -70,7 +70,7 @@ https://github.com/user-attachments/assets/7a420915-3a07-4852-a48e-339bb7e754ba
 #### Details pagina
 320px is het kleinste scherm waarop deze website goed werkt. Op dit scherm staan alle elementen onder elkaar.<br/>
 De layout van de automatische scankaart is het meest veranderd, omdat dit het breedste element was in het design.<br/>
-Het design gemaakt was voor grote schermen.
+Het design was gemaakt voor grote schermen.
 
 https://github.com/user-attachments/assets/0e705b55-3e0c-4224-b6be-e6535c9eca28
 

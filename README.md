@@ -75,17 +75,23 @@ Het design was gemaakt voor grote schermen.
 https://github.com/user-attachments/assets/0e705b55-3e0c-4224-b6be-e6535c9eca28
 
 
-**Van 440px naar 580px zijn dit de kleine veranderingen**<br/>
 Bij 440px verandert de layout van de checkmarks in de kaartjes onderaan de pagina.<br/>
+![details_checkmark-1](https://github.com/user-attachments/assets/ef921f50-8931-4da9-bb30-8fdc24e0c7f1)
+![details_checkmark-2](https://github.com/user-attachments/assets/7d8155ea-796f-40d0-9ea2-cb1624a75170)
+
 Bij 475px krijgt de automatische scankaart een extra kolom.<br/>
+![details_aandacht_vereist-1](https://github.com/user-attachments/assets/93aa0919-a919-4f5a-9514-41443073d373)
+![details_aandacht_vereist-2](https://github.com/user-attachments/assets/e7be7c58-819d-45c4-a0d2-b27e6f152232)
+
+
 Bij 520px krijgt de filtersectie een nieuwe kolom.<br/>
+![details_filters-1](https://github.com/user-attachments/assets/4f11be53-f668-40fb-9a93-959b4161f3c7)
+![details_filters-2](https://github.com/user-attachments/assets/5a40e551-da53-4a45-9515-21ff63fb127e)
+
+
 Bij 580px komt de knop naast het meter-element in de automatische scankaart.<br/>
-
-https://github.com/user-attachments/assets/c829ac86-f8a5-4a06-adb0-727386c2f5da
-
-https://github.com/user-attachments/assets/8789e590-7621-4d13-b9a2-508bd623824c
-
-https://github.com/user-attachments/assets/5015cf13-ed1c-4e23-a363-91498abca4d1
+![details_auto_scan-1](https://github.com/user-attachments/assets/5cede725-03e4-47af-9c9c-3bb7b0f131a8)
+![details_auto_scan-2](https://github.com/user-attachments/assets/95d282c5-3f63-4832-a536-07b1003705d5)
 
 
 Bij 990px komt er een tweede kolom voor de kaartjes onderaan de pagina.

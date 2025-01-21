@@ -95,18 +95,18 @@ Bij 580px komt de knop naast het meter-element in de automatische scankaart.<br/
 
 
 Bij 990px komt er een tweede kolom voor de kaartjes onderaan de pagina.
-
-https://github.com/user-attachments/assets/207c3e3b-a222-49ab-9da7-39dbdbecd52e
+![details_kaartjes-1](https://github.com/user-attachments/assets/b2379f35-9fa8-4129-b9be-e49f10d905f9)
+![details_kaartjes-2](https://github.com/user-attachments/assets/75a20868-1f8d-48ff-a21f-df2530ab2cf0)
 
 
 Bij 1030px komen alle elementen in de automatische scankaart naast elkaar te staan, net zoals in het design.
-
-https://github.com/user-attachments/assets/68655399-d124-4ba1-8af8-078c1c24afa4
+![details_auto_scan-2 1](https://github.com/user-attachments/assets/01f1c009-f240-45c0-a9f3-c31d8b3a6995)
+![details_auto_scan-2 2](https://github.com/user-attachments/assets/ac7327ac-ede6-463e-a790-9af753a7be5b)
 
 
 Bij 1250px komt het menu op beeld en verdwijnt het hamburger-menu.
-
-https://github.com/user-attachments/assets/3046f57b-311c-40bb-9e3c-97b685d25e8a
+![details_menu-1](https://github.com/user-attachments/assets/d2a07fed-1894-4147-8833-332143699eaa)
+![details_menu-2](https://github.com/user-attachments/assets/70fe6784-6319-4b38-b77b-265f63da0f0d)
 
 
 Bij 1360px komt er een derde kolom voor de kaartjes onderaan de pagina.

@@ -41,14 +41,14 @@ Voor de responsiveness ben ik begonnen met een one-column layout. Ik heb eerst d
 ![one_column_layout-3](https://github.com/user-attachments/assets/d5eddc7a-a64d-4e35-8be0-b11bd1fb6ddc)
 
 
-Daarna ben ik verder gegaan met een mobile-first aanpak. Het kleinste apparaat waarop de website goed te bekijken is, heeft een schermbreedte van 320px.<br/>
+Daarna ben ik verder gegaan met een mobile-first. Het kleinste apparaat waarop de website goed werkt, heeft een schermbreedte van 320px.<br/>
 Hiervoor moest ik de layout van de elementen binnen de overzichtskaartjes aanpassen aan.<br/>
 Het menu heb ik van het scherm weggeschoven. Als de gebruiker het menu nodig heeft, kan hij op het hamburger-icoon klikken om het te openen.
 
 https://github.com/user-attachments/assets/1d5f4e66-92a2-4442-a4f2-35c0d8dea155
 
 
-De volgende breakpoint is bij 430px. Het enige verschil hier is dat het meter-element in de overzichtskaartjes nu aan de rechterkant staat.
+De volgende breakpoint is bij 430px. Het enige verschil hier is dat het meter-element in de overzichtskaartjes nu aan de rechterkant staat.<br/>
 Bij 510px verandert dit element nog een keer. Vanaf 510px gaan de overzichtskaartjes weer terug naar de layout van de oorspronkelijke one-column layout.
 
 https://github.com/user-attachments/assets/0566321e-bf5c-4046-bd99-d38c52c5e583
@@ -68,8 +68,44 @@ https://github.com/user-attachments/assets/7a420915-3a07-4852-a48e-339bb7e754ba
 
 <!-- ----------------------------------------------------------------------------------------------------------------------------------------- -->
 #### Details pagina
+320px is het kleinste scherm waarop deze website goed werkt. Op dit scherm staan alle elementen onder elkaar.<br/>
+De layout van de automatische scankaart is het meest veranderd, omdat dit het breedste element was in het design.<br/>
+Het design gemaakt was voor grote schermen.
+
+https://github.com/user-attachments/assets/0e705b55-3e0c-4224-b6be-e6535c9eca28
 
 
+**Van 440px naar 580px zijn dit de kleine veranderingen**<br/>
+Bij 440px verandert de layout van de checkmarks in de kaartjes onderaan de pagina.<br/>
+Bij 475px krijgt de automatische scankaart een extra kolom.<br/>
+Bij 520px krijgt de filtersectie een nieuwe kolom.<br/>
+Bij 580px komt de knop naast het meter-element in de automatische scankaart.<br/>
+
+https://github.com/user-attachments/assets/c829ac86-f8a5-4a06-adb0-727386c2f5da
+
+https://github.com/user-attachments/assets/8789e590-7621-4d13-b9a2-508bd623824c
+
+https://github.com/user-attachments/assets/5015cf13-ed1c-4e23-a363-91498abca4d1
+
+
+Bij 990px komt er een tweede kolom voor de kaartjes onderaan de pagina.
+
+https://github.com/user-attachments/assets/207c3e3b-a222-49ab-9da7-39dbdbecd52e
+
+
+Bij 1030px komen alle elementen in de automatische scankaart naast elkaar te staan, net zoals in het design.
+
+https://github.com/user-attachments/assets/68655399-d124-4ba1-8af8-078c1c24afa4
+
+
+Bij 1250px komt het menu op beeld en verdwijnt het hamburger-menu.
+
+https://github.com/user-attachments/assets/3046f57b-311c-40bb-9e3c-97b685d25e8a
+
+
+Bij 1360px komt er een derde kolom voor de kaartjes onderaan de pagina.
+
+https://github.com/user-attachments/assets/93789727-057d-4896-afad-f0a9360764ca
 
 
 <!-- ----------------------------------------------------------------------------------------------------------------------------------------- -->

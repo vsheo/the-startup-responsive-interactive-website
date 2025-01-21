@@ -172,19 +172,23 @@ skip link
 <!-- ----------------------------------------------------------------------------------------------------------------------------------------- -->
 ### code conventies
 #### Ademruimte en inspringen in HTML
-* Elk child element is één tab verder ingesprongen dan het vorige. Eén tab staat gelijk aan vier spaties. [voorbeeld](https://github.com/vsheo/the-startup-responsive-interactive-website/blob/576e6c17d58fd6b5e62ce4e18033db5f77a006fa/index.html#L25C1-L33C18)
-* Inline-elementen staan op dezelfde regel, ook wanneer er meerdere child-elementen zijn die ook inline zijn. [voorbeeld](https://github.com/vsheo/the-startup-responsive-interactive-website/blob/576e6c17d58fd6b5e62ce4e18033db5f77a006fa/index.html#L45C1-L53C18)
-* Block-elementen hebben een lege regel boven en onder zich. [voorbeeld](https://github.com/vsheo/the-startup-responsive-interactive-website/blob/576e6c17d58fd6b5e62ce4e18033db5f77a006fa/index.html#L75C1-L81C23)
+* Elk child element is één tab verder ingesprongen dan het vorige. Eén tab staat gelijk aan vier spaties.
+  * [voorbeeld](https://github.com/vsheo/the-startup-responsive-interactive-website/blob/576e6c17d58fd6b5e62ce4e18033db5f77a006fa/index.html#L25C1-L33C18)
+* Inline-elementen staan op dezelfde regel, ook wanneer er meerdere child-elementen zijn die ook inline zijn.
+  * [voorbeeld](https://github.com/vsheo/the-startup-responsive-interactive-website/blob/576e6c17d58fd6b5e62ce4e18033db5f77a006fa/index.html#L45C1-L53C18)
+* Block-elementen hebben een lege regel boven en onder zich.
+  * [voorbeeld](https://github.com/vsheo/the-startup-responsive-interactive-website/blob/576e6c17d58fd6b5e62ce4e18033db5f77a006fa/index.html#L75C1-L81C23)
 
 
 <!-- ----------------------------------------------------------------------------------------------------------------------------------------- -->
 #### Volgorde en nesten van CSS selectors
-* De element selectors in CSS volgen dezelfde volgorde als de elementen in HTML. [voorbeeld]()
+* De element selectors in CSS volgen dezelfde volgorde als de elementen in HTML.
+  * [link naar styles.css](https://github.com/vsheo/the-startup-responsive-interactive-website/blob/576e6c17d58fd6b5e62ce4e18033db5f77a006fa/styles/styles.css)
 * In HTML heb ik mijn pagina verdeeld in secties, bijvoorbeeld één voor het menu, één voor de heading van de pagina, en één voor de main content. CSS-nesting volgt dezelfde structuur. Binnenin zijn er weer geneste elementen. Deze nesting komt overeen met HTML block-elementen. Bijvoorbeeld, een article in HTML bevat meerdere elementen. In CSS worden alle child-elementen van deze article genest.
   * [Dit is een section in HTML, en deze is genest in CSS](https://github.com/vsheo/the-startup-responsive-interactive-website/blob/576e6c17d58fd6b5e62ce4e18033db5f77a006fa/styles/styles.css#L328C1-L461C2)
   * [Button met een child element genest](https://github.com/vsheo/the-startup-responsive-interactive-website/blob/576e6c17d58fd6b5e62ce4e18033db5f77a006fa/styles/styles.css#L413C1-L431C10)
  * Als een element twee classes nodig heeft voordat er iets verandert, gebruik ik de &-selector, die ook genesteld wordt.
-  * [nested "&" selector](https://github.com/vsheo/the-startup-responsive-interactive-website/blob/576e6c17d58fd6b5e62ce4e18033db5f77a006fa/styles/styles.css#L442C1-L460C6)
+   * [nested "&" selector](https://github.com/vsheo/the-startup-responsive-interactive-website/blob/576e6c17d58fd6b5e62ce4e18033db5f77a006fa/styles/styles.css#L442C1-L460C6)
 
 
 <!-- ----------------------------------------------------------------------------------------------------------------------------------------- -->

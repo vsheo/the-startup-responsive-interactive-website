@@ -9,13 +9,17 @@ Future Ready Design - AccessDash
 ## Inhoudsopgave
 [Beschrijving](#Beschrijving)<br/>
 
+[Responsiveness](#Responsiveness)<br/>
+[Responsiveness: overzicht pagina](#Overzicht-pagina)<br/>
+[Responsiveness: details pagina](#Details-pagina)<br/>
+
 [interacties](#interacties)<br/>
 [Button interacties](#Button-interacties)<br/>
 [Menu interactie op grote schermen](#Menu-interactie-op-grote-schermen)<br/>
 [Menu interactie op kleine schermen](#Menu-interactie-op-kleine-schermen)<br/>
 [Menu interactie zonder JavaScript](#Menu-interactie-zonder-JavaScript)<br/>
 
-[Accessibility van het menu](#Accessibility-van-het-menu)<br/>
+[Accessibility van het menu](#Accessibility-van-het-menu)<br/><br/>
 
 
 [Kenmerken](#Kenmerken)<br/>
@@ -30,6 +34,41 @@ Future Ready Design - AccessDash
 <!-- Voeg een mooie poster visual toe 📸 -->
 <!-- Voeg een link toe naar Github Pages 🌐-->
 ### Responsiveness
+#### Overzicht pagina
+Voor de responsiveness ben ik begonnen met een one-column layout. Ik heb eerst de HTML geschreven en daarna elk element gestyled zonder het te verplaatsen.
+![one_column_layout-1](https://github.com/user-attachments/assets/d4a28049-7741-4742-92d7-af6ae4cd5ac8)
+![one_column_layout-2](https://github.com/user-attachments/assets/663ab3bf-c30b-461d-beba-2921419dae77)
+![one_column_layout-3](https://github.com/user-attachments/assets/d5eddc7a-a64d-4e35-8be0-b11bd1fb6ddc)
+
+
+Daarna ben ik verder gegaan met een mobile-first aanpak. Het kleinste apparaat waarop de website goed te bekijken is, heeft een schermbreedte van 320px.<br/>
+Hiervoor moest ik de layout van de elementen binnen de overzichtskaartjes aanpassen aan.<br/>
+Het menu heb ik van het scherm weggeschoven. Als de gebruiker het menu nodig heeft, kan hij op het hamburger-icoon klikken om het te openen.
+
+https://github.com/user-attachments/assets/1d5f4e66-92a2-4442-a4f2-35c0d8dea155
+
+
+De volgende breakpoint is bij 430px. Het enige verschil hier is dat het meter-element in de overzichtskaartjes nu aan de rechterkant staat.
+Bij 510px verandert dit element nog een keer. Vanaf 510px gaan de overzichtskaartjes weer terug naar de layout van de oorspronkelijke one-column layout.
+
+https://github.com/user-attachments/assets/0566321e-bf5c-4046-bd99-d38c52c5e583
+
+https://github.com/user-attachments/assets/7194a94d-8676-4f8d-8e32-478b77990078
+
+
+Bij de breakpoint van 1020px krijgt de layout twee kolommen voor de overzichtskaartjes.
+
+https://github.com/user-attachments/assets/cf0026cc-ff2d-4352-8e1f-6cc738df6f66
+
+
+Bij de breakpoint van 1250px staat het menu altijd in beeld.
+
+https://github.com/user-attachments/assets/7a420915-3a07-4852-a48e-339bb7e754ba
+
+
+<!-- ----------------------------------------------------------------------------------------------------------------------------------------- -->
+#### Details pagina
+
 
 
 

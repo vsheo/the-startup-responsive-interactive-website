@@ -8,9 +8,15 @@ Future Ready Design - AccessDash
 
 ## Inhoudsopgave
 [Beschrijving](#Beschrijving)<br/>
+
 [interacties](#interacties)<br/>
+[Button interacties](#Button-interacties)<br/>
+[Menu interactie op grote schermen](#Menu-interactie-op-grote-schermen)<br/>
+[Menu interactie op kleine schermen](#Menu interactie op kleine schermen)<br/>
+[Menu interactie zonder JavaScript](#Menu interactie op kleine schermen)<br/>
+
 [Accessibility van het menu](#Accessibility-van-het-menu)<br/>
-[Accessibility van het menu](#Accessibility-van-het-menu)<br/>
+
 
 [Kenmerken](#Kenmerken)<br/>
 [Styleguide](#Styleguide)<br/>
@@ -29,7 +35,7 @@ Future Ready Design - AccessDash
 
 <!-- ----------------------------------------------------------------------------------------------------------------------------------------- -->
 ### interacties
-**Button interacties**<br/>
+#### Button interacties<br/>
 Wanneer een gebruiker met de muis over een knop beweegt (hoveren), wordt de knop groter en krijgt het een schaduw.<br/>
 Dit visuele effect geeft aan dat de knop interactief is en dat de gebruiker hiermee iets kan doen.<br/>
 Bij een klik op de knop wordt een korte animatie getoond, de knop wordt kleiner en gaat daarna terug naar zijn oorspronkelijke grootte.<br/>
@@ -41,7 +47,7 @@ https://github.com/user-attachments/assets/cf2c50b9-83ed-4683-8ae6-eff5d2585301
 https://github.com/user-attachments/assets/bc510f99-884f-4ce6-89ac-73a4bd9c74f6
 
 <!-- ----------------------------------------------------------------------------------------------------------------------------------------- -->
-**Menu interactie op grote schermen**<br/>
+#### Menu interactie op grote schermen <br/>
 Op grote schermen is het menu altijd open.
 De linkjes in het menu worden ook groter en krijgen een underline als je eroverheen gaat. Dit laat zien dat je er iets mee kunt doen.<br/>
 De namen van de linkjes geven de gebruiker een idee naar welke pagina hij toe gaat.
@@ -49,7 +55,7 @@ De namen van de linkjes geven de gebruiker een idee naar welke pagina hij toe ga
 https://github.com/user-attachments/assets/0faf1d8f-6ceb-4819-8c8b-5b991b78c177
 
 <!-- ----------------------------------------------------------------------------------------------------------------------------------------- -->
-**Menu interactie op kleine schermen**<br/>
+#### Menu interactie op kleine schermen<br/>
 Op kleine schermen is er een hamburger-menu aan de linkerkant van de pagina. Als je hierop klikt, schuift het menu in beeld.<br/>
 Eerst wordt de achtergrond wat donkerder, daarna verschijnt het menu zelf.<br/>
 De linkjes komen vervolgens één voor één van boven naar beneden tevoorschijn, met 25 milliseconden extra vertraging tussen elke link.<br/>
@@ -60,7 +66,7 @@ Het menu kan worden gesloten door op het kruisje bovenaan te klikken, of door bu
 https://github.com/user-attachments/assets/370b233c-1e4d-49b8-ab85-5b661f37893e
 
 <!-- ----------------------------------------------------------------------------------------------------------------------------------------- -->
-**Menu interactie zonder JavaScript**<br/>
+#### Menu interactie zonder JavaScript<br/>
 Als er iets mis is met JavaScript, is er een fallback. Deze werkt met een checkbox en een label.<br/>
 Het label heeft het hamburger-menu erin. En de checkbox wordt met CSS van het scherm weggeschoven.
 

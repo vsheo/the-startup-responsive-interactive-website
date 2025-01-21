@@ -35,7 +35,7 @@ Future Ready Design - AccessDash
 <!-- Voeg een link toe naar Github Pages 🌐-->
 ### Responsiveness
 #### Overzicht pagina
-Voor de responsiveness ben ik begonnen met een one-column layout. Ik heb eerst de HTML geschreven en daarna elk element gestyled zonder het te verplaatsen.
+Voordat ik begon met de responsiveness, heb ik een one-column layout gemaakt. Eerst heb ik de HTML geschreven en daarna elk element gestyled zonder het te verplaatsen.
 ![one_column_layout-1](https://github.com/user-attachments/assets/d4a28049-7741-4742-92d7-af6ae4cd5ac8)
 ![one_column_layout-2](https://github.com/user-attachments/assets/663ab3bf-c30b-461d-beba-2921419dae77)
 ![one_column_layout-3](https://github.com/user-attachments/assets/d5eddc7a-a64d-4e35-8be0-b11bd1fb6ddc)

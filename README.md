@@ -12,8 +12,8 @@ Future Ready Design - AccessDash
 [interacties](#interacties)<br/>
 [Button interacties](#Button-interacties)<br/>
 [Menu interactie op grote schermen](#Menu-interactie-op-grote-schermen)<br/>
-[Menu interactie op kleine schermen](#Menu interactie op kleine schermen)<br/>
-[Menu interactie zonder JavaScript](#Menu interactie op kleine schermen)<br/>
+[Menu interactie op kleine schermen](#Menu-interactie-op-kleine-schermen)<br/>
+[Menu interactie zonder JavaScript](#Menu-interactie-zonder-JavaScript)<br/>
 
 [Accessibility van het menu](#Accessibility-van-het-menu)<br/>
 

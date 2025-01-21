@@ -12,9 +12,9 @@ De instructies voor deze opdracht staan in: [INSTRUCTIONS.md](https://github.com
 [Kenmerken](#Kenmerken)<br/>
 [Styleguide](#Styleguide)<br/>
 [Code conventies](#code-conventies)<br/>
-[Ademruimte en inspringen](#Ademruimte-en-inspringen)<br/>
-[Volgorde en nesten van CSS selectors](#Volgorde-en-nesten-van-CSS-selectors)<br/>
-[Nesten van media queries](#Nesten-van-media-queries)<br/>
+[ - Ademruimte en inspringen](#Ademruimte-en-inspringen)<br/>
+[ - Volgorde en nesten van CSS selectors](#Volgorde-en-nesten-van-CSS-selectors)<br/>
+[ - Nesten van media queries](#Nesten-van-media-queries)<br/>
 
 ## Beschrijving
 <!-- In de Beschrijving staat hoe je project er uit ziet, hoe het werkt en wat je er mee kan. -->

@@ -73,12 +73,21 @@ else {
     console.log('elements not found');
 }
 
-
-
+// loop over alle nav links en voeg een event listener toe
+// als een link geklikt wordt, gaat het menu dicht
+navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        // sluit het menu
+        closeMenu();
+    });
+});
 
 // run de functie updateMenu wanneer er een verandering in scherm plaats vindt
 screenSize.addEventListener('change', (e) => updateMenu(e));
 
+
+
+// functies
 // als het scherm kleiner is dan 1250px dan krijgt het menu de attribute inert
 // is het scherm groter, dan wordt inert weg gehaald
 function updateMenu(e) {
@@ -96,18 +105,6 @@ function updateMenu(e) {
     }
 }
 
-// loop over alle nav links en voeg een event listener toe
-// als een link geklikt wordt, gaat het menu dicht
-navLinks.forEach(link => {
-    link.addEventListener('click', () => {
-        // sluit het menu
-        closeMenu();
-    });
-});
-
-
-
-// functies
 // dit moet gebeuren als het menu open gaat
 function openMenu() {
     // laat de screen reader weten dat het menu nu open is

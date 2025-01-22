@@ -199,7 +199,21 @@ skip link
 
 <!-- ----------------------------------------------------------------------------------------------------------------------------------------- -->
 #### Naamgeving
-[voorbeeld]()
+* HTML & CSS
+  * In HTML word kebab casing gebruikt. De naam geeft aan waar het element is.
+    * bijvoorlbeeld: "overzicht-main-content", dit geeft aan dat het een element is op de overzicht pagina. En de main content staat in deze element
+      * [overzicht-main-content](https://github.com/vsheo/the-startup-responsive-interactive-website/blob/576e6c17d58fd6b5e62ce4e18033db5f77a006fa/index.html#L72)
+    * details-top-content: dit is op de details pagina, en het heeft iets te maken met de elementen die bovenaan de pagina staan
+    * [details-top-content](https://github.com/vsheo/the-startup-responsive-interactive-website/blob/576e6c17d58fd6b5e62ce4e18033db5f77a006fa/details.html#L73)
+
+* JavaScript
+  * Voor JavaScript wordt CamelCase gebruikt
+  * Als er een CSS class is die alleen via JavScript wordt toegevoegd, dan heeft deze class ook camelCase.
+  * [JS camelCase voorbeeld](https://github.com/vsheo/the-startup-responsive-interactive-website/blob/576e6c17d58fd6b5e62ce4e18033db5f77a006fa/scripts/main.js#L12C1-L14C63)
+  * [CSS camelCase voorbeeld](https://github.com/vsheo/the-startup-responsive-interactive-website/blob/576e6c17d58fd6b5e62ce4e18033db5f77a006fa/styles/styles.css#L442C1-L460C6)
+
+
+
 
 ## Bronnen
 

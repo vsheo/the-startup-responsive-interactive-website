@@ -163,9 +163,13 @@ https://github.com/user-attachments/assets/a1db0216-9852-4785-a245-3a340c286b29
 
 <!-- ----------------------------------------------------------------------------------------------------------------------------------------- -->
 ### Accessibility van het menu
+Voor het hamburgermenu gebruik ik het inert-attribuut. Dit zorgt ervoor dat gebruikers niet met de menu-elementen kunnen klikken of interactie hebben wanneer het menu dicht is, en voorkomt dat de screenreader deze elementen voorleest.
 
-skip link
+Als het hamburgermenu wordt geopend, wordt het inert-attribuut via JavaScript verwijderd. Bij het sluiten van het menu komt het attribuut weer terug.
 
+Het inert-attribuut wordt alleen gebruikt op kleine schermen. Als de schermbreedte groter is dan 1250px, wordt het attribuut weggehaald, omdat het menu dan altijd zichtbaar is. 
+
+[JavaScript code](https://github.com/vsheo/the-startup-responsive-interactive-website/blob/8d7e1e46d8a092f77676a231d9bffb6f5be51b0e/scripts/main.js#L85C1-L106C2)
 ## Kenmerken
 <!-- Bij Kenmerken staat welke technieken zijn gebruikt en hoe. Wat is de HTML structuur? Wat zijn de belangrijkste dingen in CSS? Wat is er met JS gedaan en hoe? -->
 ### Styleguide

@@ -30,6 +30,7 @@ Future Ready Design - AccessDash
 [Ademruimte en inspringen in HTML](#Ademruimte-en-inspringen-inHTML)<br/>
 [Volgorde en nesten van CSS selectors](#Volgorde-en-nesten-van-CSS-selectors)<br/>
 [Nesten van media queries](#Nesten-van-media-queries)<br/>
+[Naamgeving](#Naamgeving)<br/>
 
 ## Beschrijving
 <!-- In de Beschrijving staat hoe je project er uit ziet, hoe het werkt en wat je er mee kan. -->
@@ -193,7 +194,8 @@ skip link
 
 <!-- ----------------------------------------------------------------------------------------------------------------------------------------- -->
 #### Nesten van media queries
-
+* Media queries zijn genest en staan bovenaan, direct onder de styling die verandert bij een andere schermbreedte. Als er geen eerdere styling is, staat de media query direct onder de selector.
+  * [2 media queries voor een article](https://github.com/vsheo/the-startup-responsive-interactive-website/blob/576e6c17d58fd6b5e62ce4e18033db5f77a006fa/styles/styles.css#L345C1-L381C10)
 
 <!-- ----------------------------------------------------------------------------------------------------------------------------------------- -->
 #### Naamgeving

@@ -173,6 +173,18 @@ Het inert-attribuut wordt alleen gebruikt op kleine schermen. Als de schermbreed
 ## Kenmerken
 <!-- Bij Kenmerken staat welke technieken zijn gebruikt en hoe. Wat is de HTML structuur? Wat zijn de belangrijkste dingen in CSS? Wat is er met JS gedaan en hoe? -->
 ### Styleguide
+De huisstijl is gebaseerd op dit [figma design](https://www.figma.com/design/jk7gjHw03a0DnXfNAR2PMh/FDND-AccessDash-opdracht-januari-2025?node-id=0-1&t=W1B5NXcLbl0Krwrk-1)<br/>
+Dit is een HTML-pagina met alle classes en custom properties van de [Styleguide](https://vsheo.github.io/the-startup-responsive-interactive-website/styleguide.html)
+
+De font sizes voor titels zijn responsive gemaakt met clamp, zodat ze niet te groot lijken op kleine schermen
+* [font sizes met clamp](https://github.com/vsheo/the-startup-responsive-interactive-website/blob/c340d6a951260b15b64532749e0210bdee1acfec/styles/stylesheet.css#L50C1-L58C71)
+
+Naamgeving van custom properties
+Het eerste, en soms ook het tweede, woord geeft aan waarvoor de custom property bedoeld is, en het laatste woord geeft aan wat het verandert.
+* Bijvoorbeeld, 'background-primary': het eerste woord geeft aan dat het voor de achtergrond bedoeld is, en het tweede woord geeft aan dat het de primaire kleur is.
+  * [voorbeeld in stylesheet](https://github.com/vsheo/the-startup-responsive-interactive-website/blob/c340d6a951260b15b64532749e0210bdee1acfec/styles/stylesheet.css#L18C1-L19C37)
+* In dit voorbeeld gebruik ik twee woorden om aan te geven voor welk element de custom property bedoeld is.
+  * [voorbeeld](https://github.com/vsheo/the-startup-responsive-interactive-website/blob/c340d6a951260b15b64532749e0210bdee1acfec/styles/stylesheet.css#L42C1-L42C49)
 
 
 <!-- ----------------------------------------------------------------------------------------------------------------------------------------- -->
@@ -202,6 +214,7 @@ Het inert-attribuut wordt alleen gebruikt op kleine schermen. Als de schermbreed
 * Media queries zijn genest en staan bovenaan, direct onder de styling die verandert bij een andere schermbreedte. Als er geen eerdere styling is, staat de media query direct onder de selector.
   * [2 media queries voor een article](https://github.com/vsheo/the-startup-responsive-interactive-website/blob/576e6c17d58fd6b5e62ce4e18033db5f77a006fa/styles/styles.css#L345C1-L381C10)
 
+
 <!-- ----------------------------------------------------------------------------------------------------------------------------------------- -->
 #### Naamgeving
 * HTML & CSS
@@ -219,8 +232,9 @@ Het inert-attribuut wordt alleen gebruikt op kleine schermen. Als de schermbreed
 
 
 
-
 ## Bronnen
+[meter bar](https://css-tip.com/circular-progress/)<br/>
+[hamburger menu](https://www.youtube.com/watch?v=m7YDWNz65iI)
 
 ## Licentie
 

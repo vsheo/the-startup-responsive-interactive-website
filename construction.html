@@ -11,11 +11,11 @@
 <body>
     <main>
         <!-- skip link -->
-        <a href="#main-content-start" class="skip-link">Skip to main content</a>
+        <a href="#main-content-start" class="skip-link">Naar de hoofdinhoud</a>
 
         <!-- hamburger menu button -->
         <!-- hamburger menu die werkt met een checkbox -->
-        <input id='menu-checkbox-toggle' type='checkbox'>
+        <input id='menu-checkbox-toggle' type='checkbox' aria-hidden="true" inert="true">
         <label class="checkbox-label" for='menu-checkbox-toggle'><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg></label>
 
         <!-- hamburger menu dat werkt met JS -->
@@ -61,7 +61,7 @@
         <div class="overlay" aria-hidden="true"></div>
 
         <!-- construction pagina info -->
-        <section class="construction-info">
+        <section class="construction-info" id="main-content-start" tabindex="-1">
             <h1 class="font-overzicht-title">Error 404</h1>
             <span>Pagina niet gevonden</span>
         </section>

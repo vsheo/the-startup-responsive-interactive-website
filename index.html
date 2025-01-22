@@ -11,16 +11,16 @@
 <body>
     <main>
         <!-- skip link -->
-        <a href="#main-content-start" class="skip-link">Skip to main content</a>
+        <a href="#main-content-start" class="skip-link">Naar de hoofdinhoud</a>
 
         <!-- hamburger menu button -->
         <!-- hamburger menu icon die werkt met een checkbox -->
-        <input id='menu-checkbox-toggle' type='checkbox'>
+        <input id='menu-checkbox-toggle' type='checkbox' aria-hidden="true" inert="true">
 
         <label class="checkbox-label" for='menu-checkbox-toggle'><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg></label>
 
         <!-- hamburger menu icon dat werkt met JS -->
-        <button class="open-menu hidden" aria-label="open menu button" aria-expanded="false" aria-controls="navbar"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg></button>
+        <button class="open-menu hidden" aria-label="open menu button" aria-expanded="false" aria-controls="navbar" inert="true"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg></button>
 
         <!-- menu -->
         <nav class="menu menu-hamburger" id="navbar">
@@ -63,7 +63,7 @@
         <div class="overlay" aria-hidden="true"></div>
 
         <!-- pagina heading -->
-        <section class="pagina-heading" id="main-content-start">
+        <section class="pagina-heading" id="main-content-start" tabindex="-1">
             <h1 class="font-primary">Dashboard</h1>
             <h2 class="font-title">Overzicht</h2>
         </section>

@@ -9,7 +9,7 @@ main {
 
 .skip-link {
     position: absolute;
-    left: 10em;
+    left: 15em;
     opacity: 0;
     background-color: var(--highlight);
     color: rgb(255, 138, 0);

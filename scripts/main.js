@@ -53,7 +53,7 @@ menuNav.classList.add('menu-hamburger');
 
 // add de classes alleen als de 2 elementen bestaan op de pagina.
 if (paginaHeading && overzichtMainContent) {
-    // overzicht pagina nieuwe positie heading + main content ( met hamburger menu)
+    // overzicht pagina nieuwe positie heading + main content (met hamburger menu)
     paginaHeading.classList.add('metHamburger');
     overzichtMainContent.classList.add('metHamburger');
 }
@@ -63,7 +63,7 @@ else {
 
 // add de classes alleen als de elementen bestaan op de pagina.
 if (detailTopContent && detailSearchFilters && detailMainContent) {
-    // detail pagina nieuwe positie top content + search & filters + pagina kaartjes ( met hamburger menu)
+    // detail pagina nieuwe positie top content + search & filters + pagina kaartjes (met hamburger menu)
     paginaHeading.classList.add('metHamburger');
     detailTopContent.classList.add('metHamburger');
     detailSearchFilters.classList.add('metHamburger');
@@ -86,9 +86,13 @@ function updateMenu(e) {
     console.log(isMobile)
     if (isMobile) {
         menuNav.setAttribute('inert', 'true');
+        // haal inert weg zodat het hamburgermenu geklikt kan worden op kleine schermen
+        menuButtonOpen.removeAttribute('inert');
     }
     else {
         menuNav.removeAttribute('inert');
+        // voeg inert toe zodat tab index niet perongeluk naar het hamburger menu icon gaat.
+        menuButtonOpen.setAttribute('inert', 'true');
     }
 }
 

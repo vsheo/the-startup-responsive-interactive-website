@@ -2,9 +2,9 @@ Ontwerp en maak een responsive website voor een startup.
 
 De instructies voor deze opdracht staan in: [INSTRUCTIONS.md](https://github.com/fdnd-task/the-startup-responsive-interactieve-website/blob/main/docs/INSTRUCTIONS.md)
 
-# Titel
+# Future Ready Design - AccessDash
 <!-- Geef je project een titel en schrijf in één zin wat het is -->
-Future Ready Design - AccessDash
+
 
 ## Inhoudsopgave
 [Beschrijving](#Beschrijving)<br/>
@@ -55,7 +55,7 @@ De volgende breakpoint is bij 430px. Het enige verschil hier is dat het meter-el
 ![img-responsive_overzicht-430px-2](https://github.com/user-attachments/assets/8574f774-21d9-4f26-b549-0cdbf689e364)
 
 
-Bij 510px verandert dit element nog een keer. Vanaf 510px gaan de overzichtskaartjes weer terug naar de layout van de oorspronkelijke one-column layout.<br/>
+Vanaf 510px komen de overzichtskaartjes overeen met het Figma design.<br/>
 ![img-responsive_overzicht-510px-1](https://github.com/user-attachments/assets/525f93f5-de76-4b76-a73b-e5e4312c8450)
 ![img-responsive_overzicht-510px-2](https://github.com/user-attachments/assets/78bed694-c9b1-4b56-9b05-bb46d655d231)
 
@@ -71,18 +71,18 @@ Bij de breakpoint van 1250px staat het menu altijd in beeld.
 
 <!-- ----------------------------------------------------------------------------------------------------------------------------------------- -->
 #### Details pagina
-320px is het kleinste scherm waarop deze website goed werkt. Op dit scherm staan alle elementen onder elkaar.<br/>
+320px is ook het kleinste scherm waarop de details pagina goed werkt. Op dit scherm staan alle elementen onder elkaar.<br/>
 De layout van de automatische scankaart is het meest veranderd, omdat dit het breedste element was in het design.<br/>
 Het design was gemaakt voor grote schermen.
 
 https://github.com/user-attachments/assets/0e705b55-3e0c-4224-b6be-e6535c9eca28
 
 
-Bij 440px verandert de layout van de checkmarks in de kaartjes onderaan de pagina.<br/>
+Als er één of twee checkmarks zijn, passen ze naast elkaar. Voor drie is er niet genoeg ruimte, dus staan de checkmarks tot 430px onder elkaar.<br/>
 ![details_checkmark-1](https://github.com/user-attachments/assets/ef921f50-8931-4da9-bb30-8fdc24e0c7f1)
 ![details_checkmark-2](https://github.com/user-attachments/assets/7d8155ea-796f-40d0-9ea2-cb1624a75170)
 
-Bij 475px krijgt de automatische scankaart een extra kolom.<br/>
+vanaf 475px is er genoeg plaats voor een extra kolom in de automatische scankaart.<br/>
 ![details_aandacht_vereist-1](https://github.com/user-attachments/assets/93aa0919-a919-4f5a-9514-41443073d373)
 ![details_aandacht_vereist-2](https://github.com/user-attachments/assets/e7be7c58-819d-45c4-a0d2-b27e6f152232)
 
@@ -142,8 +142,8 @@ https://github.com/user-attachments/assets/da94ceb2-706c-4b9a-9209-ed07d78062af
 <!-- ----------------------------------------------------------------------------------------------------------------------------------------- -->
 #### Menu interactie op kleine schermen<br/>
 Op kleine schermen is er een hamburger-menu aan de linkerkant van de pagina. Als je hierop klikt, schuift het menu in beeld.<br/>
-Eerst wordt de achtergrond wat donkerder, daarna verschijnt het menu zelf.<br/>
-De linkjes komen vervolgens één voor één van boven naar beneden tevoorschijn, met 25 milliseconden extra vertraging tussen elke link.<br/>
+Eerst wordt de achtergrond donkerder. Daarna verschijnt de achtergrond van het menu. Dit heet "staging" volgens de Disney animatie principes<br/>
+De linkjes verschijnen één voor één van boven naar beneden, met 25 milliseconden vertraging ertussen. Dit heet het "timing" uit de Disney animatie principes<br/>
 
 Het menu kan worden gesloten door op het kruisje bovenaan te klikken, of door buiten het menu te klikken.
 
@@ -178,13 +178,13 @@ skip link
   * [voorbeeld](https://github.com/vsheo/the-startup-responsive-interactive-website/blob/576e6c17d58fd6b5e62ce4e18033db5f77a006fa/index.html#L25C1-L33C18)
 * Inline-elementen staan op dezelfde regel, ook wanneer er meerdere child-elementen zijn die ook inline zijn.
   * [voorbeeld](https://github.com/vsheo/the-startup-responsive-interactive-website/blob/576e6c17d58fd6b5e62ce4e18033db5f77a006fa/index.html#L45C1-L53C18)
-* Block-elementen hebben een lege regel boven en onder zich.
+* Block-elementen hebben een lege regel erboven en eronder. De child-elementen staan onder elkaar.
   * [voorbeeld](https://github.com/vsheo/the-startup-responsive-interactive-website/blob/576e6c17d58fd6b5e62ce4e18033db5f77a006fa/index.html#L75C1-L81C23)
 
 
 <!-- ----------------------------------------------------------------------------------------------------------------------------------------- -->
 #### Volgorde en nesten van CSS selectors
-* De element selectors in CSS volgen dezelfde volgorde als de elementen in HTML.
+* De selectors in CSS volgen dezelfde volgorde als de elementen in HTML.
   * [link naar styles.css](https://github.com/vsheo/the-startup-responsive-interactive-website/blob/576e6c17d58fd6b5e62ce4e18033db5f77a006fa/styles/styles.css)
 * In HTML heb ik mijn pagina verdeeld in secties, bijvoorbeeld één voor het menu, één voor de heading van de pagina, en één voor de main content. CSS-nesting volgt dezelfde structuur. Binnenin zijn er weer geneste elementen. Deze nesting komt overeen met HTML block-elementen. Bijvoorbeeld, een article in HTML bevat meerdere elementen. In CSS worden alle child-elementen van deze article genest.
   * [Dit is een section in HTML, en deze is genest in CSS](https://github.com/vsheo/the-startup-responsive-interactive-website/blob/576e6c17d58fd6b5e62ce4e18033db5f77a006fa/styles/styles.css#L328C1-L461C2)

@@ -38,7 +38,7 @@ Future Ready Design - AccessDash
 <!-- Voeg een link toe naar Github Pages 🌐-->
 ### Responsiveness
 #### Overzicht pagina
-Voordat ik begon met de responsiveness, heb ik een one-column layout gemaakt. Eerst heb ik de HTML geschreven en daarna elk element gestyled zonder het te verplaatsen.
+Voordat ik begon met de responsiveness, heb ik een one-column layout gemaakt. Eerst heb ik de HTML geschreven en daarna elk element gestyled zonder het te verplaatsen.<br/>
 ![one_column_layout-1](https://github.com/user-attachments/assets/d4a28049-7741-4742-92d7-af6ae4cd5ac8)
 ![one_column_layout-2](https://github.com/user-attachments/assets/663ab3bf-c30b-461d-beba-2921419dae77)
 ![one_column_layout-3](https://github.com/user-attachments/assets/d5eddc7a-a64d-4e35-8be0-b11bd1fb6ddc)
@@ -46,27 +46,27 @@ Voordat ik begon met de responsiveness, heb ik een one-column layout gemaakt. Ee
 
 Daarna ben ik verder gegaan met een mobile-first. Het kleinste apparaat waarop de website goed werkt, heeft een schermbreedte van 320px.<br/>
 Hiervoor moest ik de layout van de elementen binnen de overzichtskaartjes aanpassen aan.<br/>
-Het menu heb ik van het scherm weggeschoven. Als de gebruiker het menu nodig heeft, kan hij op het hamburger-icoon klikken om het te openen.
-
-https://github.com/user-attachments/assets/1d5f4e66-92a2-4442-a4f2-35c0d8dea155
+Het menu heb ik van het scherm weggeschoven. Als de gebruiker het menu nodig heeft, kan hij op het hamburger-icoon klikken om het te openen.<br/>
+![img-responsive_overzicht-320px](https://github.com/user-attachments/assets/00cef6a3-205a-4a2e-bbdd-0afaa017529b)
 
 
 De volgende breakpoint is bij 430px. Het enige verschil hier is dat het meter-element in de overzichtskaartjes nu aan de rechterkant staat.<br/>
-Bij 510px verandert dit element nog een keer. Vanaf 510px gaan de overzichtskaartjes weer terug naar de layout van de oorspronkelijke one-column layout.
+![img-responsive_overzicht-430px-1](https://github.com/user-attachments/assets/b163ad3a-d08c-4f96-8797-bf0ae1be90d0)
+![img-responsive_overzicht-430px-2](https://github.com/user-attachments/assets/8574f774-21d9-4f26-b549-0cdbf689e364)
 
-https://github.com/user-attachments/assets/0566321e-bf5c-4046-bd99-d38c52c5e583
 
-https://github.com/user-attachments/assets/7194a94d-8676-4f8d-8e32-478b77990078
+Bij 510px verandert dit element nog een keer. Vanaf 510px gaan de overzichtskaartjes weer terug naar de layout van de oorspronkelijke one-column layout.<br/>
+![img-responsive_overzicht-510px-1](https://github.com/user-attachments/assets/525f93f5-de76-4b76-a73b-e5e4312c8450)
+![img-responsive_overzicht-510px-2](https://github.com/user-attachments/assets/78bed694-c9b1-4b56-9b05-bb46d655d231)
 
 
 Bij de breakpoint van 1020px krijgt de layout twee kolommen voor de overzichtskaartjes.
-
-https://github.com/user-attachments/assets/cf0026cc-ff2d-4352-8e1f-6cc738df6f66
+![img-responsive_overzicht-1020px-1](https://github.com/user-attachments/assets/6cbd962a-b085-4061-a56b-26fecc43df7b)
+![img-responsive_overzicht-1020px-2](https://github.com/user-attachments/assets/2b6a1017-bb79-4aca-bed2-41af0626f2b4)
 
 
 Bij de breakpoint van 1250px staat het menu altijd in beeld.
-
-https://github.com/user-attachments/assets/7a420915-3a07-4852-a48e-339bb7e754ba
+![img-responsive_overzicht-1250px-1](https://github.com/user-attachments/assets/8fc6d7b0-d947-48ea-9229-5eaf4c28d95a)
 
 
 <!-- ----------------------------------------------------------------------------------------------------------------------------------------- -->
@@ -136,7 +136,8 @@ Op grote schermen is het menu altijd open.
 De linkjes in het menu worden ook groter en krijgen een underline als je eroverheen gaat. Dit laat zien dat je er iets mee kunt doen.<br/>
 De namen van de linkjes geven de gebruiker een idee naar welke pagina hij toe gaat.
 
-https://github.com/user-attachments/assets/0faf1d8f-6ceb-4819-8c8b-5b991b78c177
+https://github.com/user-attachments/assets/da94ceb2-706c-4b9a-9209-ed07d78062af
+
 
 <!-- ----------------------------------------------------------------------------------------------------------------------------------------- -->
 #### Menu interactie op kleine schermen<br/>
@@ -208,9 +209,9 @@ skip link
 
 * JavaScript
   * Voor JavaScript wordt CamelCase gebruikt
-  * Als er een CSS class is die alleen via JavScript wordt toegevoegd, dan heeft deze class ook camelCase.
-  * [JS camelCase voorbeeld](https://github.com/vsheo/the-startup-responsive-interactive-website/blob/576e6c17d58fd6b5e62ce4e18033db5f77a006fa/scripts/main.js#L12C1-L14C63)
-  * [CSS camelCase voorbeeld](https://github.com/vsheo/the-startup-responsive-interactive-website/blob/576e6c17d58fd6b5e62ce4e18033db5f77a006fa/styles/styles.css#L442C1-L460C6)
+  * Als er een HTML/CSS class is die alleen via JavScript wordt toegevoegd, dan heeft deze class ook camelCase.
+    * [JS camelCase voorbeeld](https://github.com/vsheo/the-startup-responsive-interactive-website/blob/576e6c17d58fd6b5e62ce4e18033db5f77a006fa/scripts/main.js#L12C1-L14C63)
+    * [CSS camelCase voorbeeld](https://github.com/vsheo/the-startup-responsive-interactive-website/blob/576e6c17d58fd6b5e62ce4e18033db5f77a006fa/styles/styles.css#L442C1-L460C6)
 
 
 

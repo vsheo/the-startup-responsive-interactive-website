@@ -21,7 +21,6 @@ De instructies voor deze opdracht staan in: [INSTRUCTIONS.md](https://github.com
 
 [Accessibility van het menu](#Accessibility-van-het-menu)<br/><br/>
 
-
 [Kenmerken](#Kenmerken)<br/>
 
 [Styleguide](#Styleguide)<br/>
@@ -31,6 +30,13 @@ De instructies voor deze opdracht staan in: [INSTRUCTIONS.md](https://github.com
 [Volgorde en nesten van CSS selectors](#Volgorde-en-nesten-van-CSS-selectors)<br/>
 [Nesten van media queries](#Nesten-van-media-queries)<br/>
 [Naamgeving](#Naamgeving)<br/>
+
+[HTML](#HTML)<br/>
+
+[CSS](#CSS)<br/>
+
+[JavaScript](#JavaScript)<br/>
+
 
 ## Beschrijving
 <!-- In de Beschrijving staat hoe je project er uit ziet, hoe het werkt en wat je er mee kan. -->
@@ -231,7 +237,40 @@ Het eerste, en soms ook het tweede, woord geeft aan waarvoor de custom property 
     * [CSS camelCase voorbeeld](https://github.com/vsheo/the-startup-responsive-interactive-website/blob/576e6c17d58fd6b5e62ce4e18033db5f77a006fa/styles/styles.css#L442C1-L460C6)
 
 
+<!-- ----------------------------------------------------------------------------------------------------------------------------------------- -->
+### HTML
+* overzicht pagina
+  * De HTML bestaat voornamelijk uit een nav voor het menu, een section voor de heading van de pagina, en een div-container met daarin articles, wat de hoofdinhoud van de pagina is.
+  * Ik heb ook een checkbox met een label. Deze is op display: none gezet met JavaScript. Als JavaScript niet laadt, is dit de knop die het hamburger menu opent.
+  * Als laatste heb ik ook een div toegevoegd, die de achtergrond wat donkerder maakt wanneer het hamburgermenu open is
+  * [link naar index.html](https://github.com/vsheo/the-startup-responsive-interactive-website/blob/main/index.html)
 
+* Details pagina
+  * Deze pagina heeft dezelfde elementen als de overzicht pagina
+  * In plaats van de div die de hoofdinhoud bevat, is de hoofdinhoud op de detailpagina verdeeld in een section met de twee bovenste elementen, een aside met een zoekbalk en filterknoppen, en een grid met meerdere articles.
+  * [link naar details.html](https://github.com/vsheo/the-startup-responsive-interactive-website/blob/main/details.html)
+
+* error pagina
+  * Als er op een link wordt geklikt die naar een pagina leidt die nog niet bestaat, komt de gebruiker terecht op een pagina die aangeeft dat de pagina niet gevonden kan worden.
+  * [link naar construction.html](https://github.com/vsheo/the-startup-responsive-interactive-website/blob/main/construction.html)
+
+<!-- ----------------------------------------------------------------------------------------------------------------------------------------- -->
+### CSS
+* Voor CSS maak ik gebruik van twee stylesheets:
+  * de eerste bevat de huisstijl
+    * [strylesheet.css](https://github.com/vsheo/the-startup-responsive-interactive-website/blob/main/styles/stylesheet.css)
+  * en de tweede is voor de styling van alle elementen, de layout van de pagina en de media queries.
+    * [styles.css](https://github.com/vsheo/the-startup-responsive-interactive-website/blob/main/styles/styles.css)
+
+
+<!-- ----------------------------------------------------------------------------------------------------------------------------------------- -->
+### JavaScript
+JavaScript wordt gebruikt om het hamburgermenu open en dicht te maken. JS luistert naar een klik op de hamburgerknop, voegt wat classes toe en haalt het inert-attribuut weg.
+Als het menu weer dichtgaat, worden de classes verwijderd en het attribuut weer weggehaald.<br/>
+[link naar main.js](https://github.com/vsheo/the-startup-responsive-interactive-website/blob/main/scripts/main.js)
+
+
+<!-- ----------------------------------------------------------------------------------------------------------------------------------------- -->
 ## Bronnen
 [meter bar](https://css-tip.com/circular-progress/)<br/>
 [hamburger menu](https://www.youtube.com/watch?v=m7YDWNz65iI)

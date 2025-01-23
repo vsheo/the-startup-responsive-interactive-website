@@ -430,7 +430,7 @@ label {
             }
         }
 
-        meter {
+        progress {
             grid-area: progress;
 
             justify-self: center;
@@ -505,7 +505,7 @@ label {
             margin-left: 1.5em;
         }
 
-        meter {
+        progress {
             grid-area: progress;
 
             margin-left: 1.5em;
@@ -587,7 +587,7 @@ label {
             }
         }
 
-        meter {
+        progress {
             grid-area: progress;
 
             margin-left: 1em;

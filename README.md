@@ -7,8 +7,7 @@ De instructies voor deze opdracht staan in: [INSTRUCTIONS.md](https://github.com
 
 
 ## Inhoudsopgave
-[Beschrijving](#Beschrijving)<br/>
-
+[**_Beschrijving_**](#Beschrijving)<br/>
 [Responsiveness](#Responsiveness)<br/>
 [Responsiveness: overzicht pagina](#Overzicht-pagina)<br/>
 [Responsiveness: details pagina](#Details-pagina)<br/>
@@ -21,8 +20,7 @@ De instructies voor deze opdracht staan in: [INSTRUCTIONS.md](https://github.com
 
 [Accessibility van het menu](#Accessibility-van-het-menu)<br/><br/>
 
-[Kenmerken](#Kenmerken)<br/>
-
+[**_Kenmerken_**](#Kenmerken)<br/>
 [Styleguide](#Styleguide)<br/>
 
 [Code conventies](#code-conventies)<br/>

@@ -40,6 +40,18 @@ De instructies voor deze opdracht staan in: [INSTRUCTIONS.md](https://github.com
 <!-- In de Beschrijving staat hoe je project er uit ziet, hoe het werkt en wat je er mee kan. -->
 <!-- Voeg een mooie poster visual toe 📸 -->
 <!-- Voeg een link toe naar Github Pages 🌐-->
+De opdracht is het ontwikkelen van een website waarmee bedrijven hun eigen websites
+kunnen testen op toegankelijkheid. Dit gebeurt aan de hand van de WCAG-richtlijnen. Het
+programma biedt zowel automatische maandelijkse tests als handmatige controles. Hiermee
+wordt inzicht gegeven in welke onderdelen voldoen en welke verbeterd moeten worden.
+
+Het doel is een werkende, responsieve en toegankelijke website op te leveren, met de
+nadruk op:
+- Het dashboard
+- De overzichtspagina met kaarten
+- Grafieken ter visualisatie van de toegankelijkheid
+
+
 ### Responsiveness
 #### Overzicht pagina
 Voordat ik begon met de responsiveness, heb ik een one-column layout gemaakt. Eerst heb ik de HTML geschreven en daarna elk element gestyled zonder het te verplaatsen.<br/>
